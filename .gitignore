@@ -1,0 +1,19 @@
+# 依赖与构建产物（本框架运行时零 npm 依赖）
+node_modules/
+
+# 本地环境与密钥：只提交 .env.example，绝不提交 .env
+.env
+.env.*
+!.env.example
+
+# 运行时数据（会话 / 记忆 / 用户 / 附件等）
+data/
+.data/
+.out/
+
+# 构建与发布产物
+dist/
+
+# 日志与系统文件
+*.log
+.DS_Store

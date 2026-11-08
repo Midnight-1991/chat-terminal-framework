@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN" class="page-auth-html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0F4142">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="管理 Chat Terminal 账号：昵称、密码、用量与反馈。">
+  <title>账号 · Chat Terminal</title>
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page-auth" data-design="rp">
+  <div class="page-auth">
+    <header class="page-top">
+      <a class="page-brand" href="/">Chat Terminal</a>
+      <nav class="page-nav" aria-label="页面导航">
+        <a class="btn-ghost" href="/">返回对话</a>
+        <a class="btn-ghost" href="/feedback.html">反馈</a>
+        <button id="logoutBtn" class="btn-ghost" type="button">退出登录</button>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <p class="form-hint auth-eyebrow">ACCOUNT</p>
+      <h1 class="auth-title">账号</h1>
+      <p class="form-hint">昵称、密码和用量都在这里管理。</p>
+      <p id="accountError" class="form-error" role="alert" hidden></p>
+
+      <section class="auth-card" aria-labelledby="profileTitle">
+        <h2 id="profileTitle" class="card-title">个人资料</h2>
+        <dl class="profile-meta">
+          <div class="profile-row">
+            <dt>用户名</dt>
+            <dd id="accountUsername">—</dd>
+          </div>
+          <div class="profile-row">
+            <dt>身份</dt>
+            <dd id="accountRole">—</dd>
+          </div>
+        </dl>
+        <form id="profileForm" class="auth-form" novalidate>
+          <label class="field">
+            <span class="field-label">昵称</span>
+            <input id="displayName" class="input" name="displayName" type="text"
+                   autocomplete="nickname" maxlength="40" placeholder="留空则显示用户名">
+          </label>
+          <p id="profileStatus" class="form-hint" role="status" hidden></p>
+          <button id="saveProfile" class="btn-primary" type="submit">保存昵称</button>
+        </form>
+      </section>
+
+      <section class="auth-card" aria-labelledby="passwordTitle">
+        <h2 id="passwordTitle" class="card-title">修改密码</h2>
+        <form id="passwordForm" class="auth-form" novalidate>
+          <label class="field">
+            <span class="field-label">当前密码</span>
+            <input id="oldPassword" class="input" name="oldPassword" type="password"
+                   autocomplete="current-password" required>
+          </label>
+          <label class="field">
+            <span class="field-label">新密码（至少 8 位）</span>
+            <input id="newPassword" class="input" name="newPassword" type="password"
+                   autocomplete="new-password" required>
+          </label>
+          <p id="passwordStatus" class="form-hint" role="status" hidden></p>
+          <button id="savePassword" class="btn-primary" type="submit">更新密码</button>
+        </form>
+      </section>
+
+      <!-- 自定义模型（BYOK）。默认 hidden，AUTH=off / 旧后端 404 时保持隐藏。 -->
+      <section id="byokCard" class="auth-card" aria-labelledby="byokTitle" hidden>
+        <h2 id="byokTitle" class="card-title">自定义模型</h2>
+        <p class="form-hint">用你自己的厂商 API key 对话；key 只保存在服务端，不计入官方配额。</p>
+        <p id="byokStatus" class="byok-status" role="status" aria-live="polite">正在读取配置…</p>
+        <form id="byokForm" class="auth-form" novalidate>
+          <label class="field">
+            <span class="field-label">厂商</span>
+            <select id="byokProvider" class="input" name="provider"></select>
+          </label>
+          <label class="field">
+            <span class="field-label">模型名</span>
+            <input id="byokModel" class="input" name="model" type="text"
+                   autocomplete="off" autocapitalize="off" spellcheck="false"
+                   maxlength="128" placeholder="例如 deepseek-chat" required>
+          </label>
+          <label id="byokBaseUrlField" class="field" hidden>
+            <span class="field-label">Base URL（OpenAI 兼容，https）</span>
+            <input id="byokBaseUrl" class="input" name="baseUrl" type="url"
+                   autocomplete="off" autocapitalize="off" spellcheck="false"
+                   maxlength="512" placeholder="https://api.example.com/v1">
+          </label>
+          <label class="field">
+            <span class="field-label">API key</span>
+            <input id="byokApiKey" class="input" name="apiKey" type="password"
+                   autocomplete="off" autocapitalize="off" spellcheck="false"
+                   maxlength="512" placeholder="test-key-..." required>
+          </label>
+          <p id="byokHint" class="form-hint byok-hint" hidden></p>
+          <p id="byokCheckResult" class="form-hint byok-hint" role="status" hidden></p>
+          <p id="byokError" class="form-error" role="alert" aria-live="polite" hidden></p>
+          <div class="byok-actions">
+            <button id="byokSave" class="btn-primary" type="submit">保存配置</button>
+            <button id="byokCheck" class="btn-ghost" type="button">测试连接</button>
+            <button id="byokDelete" class="btn-ghost" type="button" hidden>删除配置</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="auth-card" aria-labelledby="usageTitle">
+        <h2 id="usageTitle" class="card-title">我的用量</h2>
+        <p class="form-hint">统计最近 30 天；费用为按价格表估算的参考值。</p>
+        <div id="usageStats" class="usage-stats" aria-live="polite">
+          <p class="form-hint">正在载入…</p>
+        </div>
+      </section>
+
+      <section class="auth-card" aria-labelledby="myFeedbackTitle">
+        <h2 id="myFeedbackTitle" class="card-title">我的反馈</h2>
+        <div id="feedbackList" class="feedback-list" aria-live="polite">
+          <p class="form-hint">正在载入…</p>
+        </div>
+      </section>
+
+      <!-- 数据与账号（导出我的数据 / 注销账号） -->
+      <section id="dataCard" class="auth-card" aria-labelledby="dataTitle">
+        <h2 id="dataTitle" class="card-title">数据与账号</h2>
+        <p class="form-hint">导出包含你的对话、记忆、收藏与用量摘要；注销会删除账号与数据，且无法恢复。</p>
+        <p id="dataStatus" class="form-hint" role="status" hidden></p>
+        <div class="data-actions">
+          <button id="exportDataBtn" class="btn-ghost" type="button">导出我的数据</button>
+        </div>
+        <div class="account-danger" role="group" aria-labelledby="deleteTitle">
+          <h3 id="deleteTitle" class="danger-title">注销账号</h3>
+          <p class="form-hint">需要同时输入密码和用户名确认。注销后不可恢复；最后一位管理员不能注销。</p>
+          <label class="field">
+            <span class="field-label">密码</span>
+            <input id="deletePassword" class="input" type="password"
+                   autocomplete="current-password" required>
+          </label>
+          <label class="field">
+            <span class="field-label">输入用户名确认</span>
+            <input id="deleteUsername" class="input" type="text"
+                   autocomplete="username" autocapitalize="off" spellcheck="false" required>
+          </label>
+          <p id="deleteError" class="form-error" role="alert" hidden></p>
+          <button id="deleteAccountBtn" class="btn-danger" type="button">永久注销账号</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-foot">
+      <p class="form-hint">Chat Terminal</p>
+    </footer>
+  </div>
+  <script type="module" src="/js/account.js"></script>
+</body>
+</html>

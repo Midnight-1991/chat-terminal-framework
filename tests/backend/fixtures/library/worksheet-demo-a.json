@@ -1,0 +1,18 @@
+{
+  "id": "worksheet-demo-a",
+  "title": "模板卡甲",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "sourceUrl": "https://example.org/ws-01",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "Worksheet",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "卡片甲"
+        }
+      ]
+    }
+  ]
+}

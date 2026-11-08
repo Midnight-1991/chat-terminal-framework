@@ -1,0 +1,3877 @@
+{
+  "schema": "chat-terminal-opensource-content/1",
+  "name": "chat-terminal-framework",
+  "version": "0.2.1",
+  "license": "Apache-2.0",
+  "generatedAt": "2026-11-08T00:00:00.000Z",
+  "base": {
+    "source": "dist/opensource",
+    "head": "7aa0f98",
+    "note": "v0.1 冻结树（dist/opensource）；本产物由其复制并按 V0.2 中性化映射处理"
+  },
+  "neutralization": {
+    "map": {
+      "found": true,
+      "path": "docs/open-source/V0.2-NEUTRALIZATION-MAP.md",
+      "sha256": "468c3b566cb53eee2151611b0501107fe0b908c64cab4969548d367a989c105b",
+      "lines": 566,
+      "entryCount": 63
+    },
+    "ruleCount": 228,
+    "rules": [
+      {
+        "code": "R-001",
+        "category": "brand",
+        "applied": 7
+      },
+      {
+        "code": "R-002",
+        "category": "brand",
+        "applied": 4
+      },
+      {
+        "code": "R-003",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-004",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-005",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-006",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-007",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-008",
+        "category": "brand",
+        "applied": 12
+      },
+      {
+        "code": "R-009",
+        "category": "brand",
+        "applied": 3
+      },
+      {
+        "code": "R-010",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-011",
+        "category": "brand",
+        "applied": 3
+      },
+      {
+        "code": "R-012",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-013",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-014",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-015",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-016",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-017",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-018",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-019",
+        "category": "brand",
+        "applied": 2
+      },
+      {
+        "code": "R-020",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-021",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-022",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-023",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-024",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-025",
+        "category": "domain",
+        "applied": 3
+      },
+      {
+        "code": "R-026",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-027",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-028",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-029",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-030",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-031",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-032",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-033",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-034",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-035",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-036",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-037",
+        "category": "license",
+        "applied": 1
+      },
+      {
+        "code": "R-038",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-039",
+        "category": "secret",
+        "applied": 55
+      },
+      {
+        "code": "R-040",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-041",
+        "category": "secret",
+        "applied": 1
+      },
+      {
+        "code": "R-042",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-043",
+        "category": "brand",
+        "applied": 12
+      },
+      {
+        "code": "R-044",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-045",
+        "category": "brand",
+        "applied": 67
+      },
+      {
+        "code": "R-046",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-047",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-048",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-049",
+        "category": "brand",
+        "applied": 1
+      },
+      {
+        "code": "R-050",
+        "category": "brand",
+        "applied": 0
+      },
+      {
+        "code": "R-051",
+        "category": "domain",
+        "applied": 5
+      },
+      {
+        "code": "R-052",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-053",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-054",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-055",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-056",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-057",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-058",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-059",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-060",
+        "category": "domain",
+        "applied": 91
+      },
+      {
+        "code": "R-061",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-062",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-063",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-064",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-065",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-066",
+        "category": "domain",
+        "applied": 10
+      },
+      {
+        "code": "R-067",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-068",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-069",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-070",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-071",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-072",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-073",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-074",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-075",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-076",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-077",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-078",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-079",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-080",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-081",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-082",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-083",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-084",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-085",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-086",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-087",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-088",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-089",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-090",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-091",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-092",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-093",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-094",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-095",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-096",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-097",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-098",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-099",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-100",
+        "category": "internal",
+        "applied": 311
+      },
+      {
+        "code": "R-101",
+        "category": "internal",
+        "applied": 6
+      },
+      {
+        "code": "R-102",
+        "category": "internal",
+        "applied": 80
+      },
+      {
+        "code": "R-103",
+        "category": "internal",
+        "applied": 206
+      },
+      {
+        "code": "R-104",
+        "category": "internal",
+        "applied": 142
+      },
+      {
+        "code": "R-105",
+        "category": "internal",
+        "applied": 86
+      },
+      {
+        "code": "R-106",
+        "category": "internal",
+        "applied": 63
+      },
+      {
+        "code": "R-107",
+        "category": "internal",
+        "applied": 39
+      },
+      {
+        "code": "R-108",
+        "category": "internal",
+        "applied": 15
+      },
+      {
+        "code": "R-109",
+        "category": "internal",
+        "applied": 10
+      },
+      {
+        "code": "R-110",
+        "category": "license",
+        "applied": 3
+      },
+      {
+        "code": "R-111",
+        "category": "license",
+        "applied": 3
+      },
+      {
+        "code": "R-112",
+        "category": "license",
+        "applied": 2
+      },
+      {
+        "code": "R-113",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-114",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-115",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-116",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-117",
+        "category": "license",
+        "applied": 0
+      },
+      {
+        "code": "R-118",
+        "category": "domain",
+        "applied": 7
+      },
+      {
+        "code": "R-119",
+        "category": "domain",
+        "applied": 3
+      },
+      {
+        "code": "R-120",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-121",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-122",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-123",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-124",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-125",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-126",
+        "category": "domain",
+        "applied": 61
+      },
+      {
+        "code": "R-127",
+        "category": "domain",
+        "applied": 12
+      },
+      {
+        "code": "R-128",
+        "category": "domain",
+        "applied": 3
+      },
+      {
+        "code": "R-129",
+        "category": "domain",
+        "applied": 8
+      },
+      {
+        "code": "R-130",
+        "category": "domain",
+        "applied": 7
+      },
+      {
+        "code": "R-131",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-132",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-133",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-134",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-135",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-136",
+        "category": "domain",
+        "applied": 37
+      },
+      {
+        "code": "R-137",
+        "category": "domain",
+        "applied": 35
+      },
+      {
+        "code": "R-138",
+        "category": "domain",
+        "applied": 25
+      },
+      {
+        "code": "R-139",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-140",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-141",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-142",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-143",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-144",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-145",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-146",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-147",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-148",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-149",
+        "category": "internal",
+        "applied": 3
+      },
+      {
+        "code": "R-150",
+        "category": "internal",
+        "applied": 3
+      },
+      {
+        "code": "R-151",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-152",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-153",
+        "category": "internal",
+        "applied": 0
+      },
+      {
+        "code": "R-154",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-155",
+        "category": "internal",
+        "applied": 36
+      },
+      {
+        "code": "R-156",
+        "category": "internal",
+        "applied": 33
+      },
+      {
+        "code": "R-157",
+        "category": "internal",
+        "applied": 13
+      },
+      {
+        "code": "R-158",
+        "category": "internal",
+        "applied": 235
+      },
+      {
+        "code": "R-159",
+        "category": "internal",
+        "applied": 3
+      },
+      {
+        "code": "R-160",
+        "category": "internal",
+        "applied": 20
+      },
+      {
+        "code": "R-161",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-162",
+        "category": "internal",
+        "applied": 0
+      },
+      {
+        "code": "R-163",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-164",
+        "category": "internal",
+        "applied": 7
+      },
+      {
+        "code": "R-165",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-166",
+        "category": "internal",
+        "applied": 24
+      },
+      {
+        "code": "R-167",
+        "category": "internal",
+        "applied": 6
+      },
+      {
+        "code": "R-168",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-169",
+        "category": "internal",
+        "applied": 0
+      },
+      {
+        "code": "R-170",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-171",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-172",
+        "category": "internal",
+        "applied": 2
+      },
+      {
+        "code": "R-173",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-174",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-175",
+        "category": "domain",
+        "applied": 8
+      },
+      {
+        "code": "R-176",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-177",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-178",
+        "category": "domain",
+        "applied": 3
+      },
+      {
+        "code": "R-179",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-180",
+        "category": "domain",
+        "applied": 35
+      },
+      {
+        "code": "R-181",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-182",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-183",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-184",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-185",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-186",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-187",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-188",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-189",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-190",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-191",
+        "category": "internal",
+        "applied": 1
+      },
+      {
+        "code": "R-192",
+        "category": "domain",
+        "applied": 16
+      },
+      {
+        "code": "R-193",
+        "category": "domain",
+        "applied": 6
+      },
+      {
+        "code": "R-194",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-195",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-196",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-197",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-198",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-199",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-200",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-201",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-202",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-203",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-204",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-205",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-206",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-207",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-208",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-209",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-210",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-211",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-212",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-213",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-214",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-215",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-216",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-217",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-218",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-219",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-220",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-221",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-222",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-223",
+        "category": "domain",
+        "applied": 1
+      },
+      {
+        "code": "R-224",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-225",
+        "category": "domain",
+        "applied": 2
+      },
+      {
+        "code": "R-226",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-227",
+        "category": "domain",
+        "applied": 0
+      },
+      {
+        "code": "R-228",
+        "category": "domain",
+        "applied": 0
+      }
+    ],
+    "perRule": {
+      "R-060": 91,
+      "R-006": 1,
+      "R-008": 12,
+      "R-100": 311,
+      "R-103": 206,
+      "R-105": 86,
+      "R-137": 35,
+      "R-149": 3,
+      "R-150": 3,
+      "R-151": 1,
+      "R-154": 1,
+      "R-156": 33,
+      "R-158": 235,
+      "R-166": 24,
+      "R-167": 6,
+      "R-129": 8,
+      "R-130": 7,
+      "R-175": 8,
+      "R-039": 55,
+      "R-045": 67,
+      "R-005": 2,
+      "R-102": 80,
+      "R-104": 142,
+      "R-106": 63,
+      "R-107": 39,
+      "R-108": 15,
+      "R-109": 10,
+      "R-136": 37,
+      "R-138": 25,
+      "R-155": 36,
+      "R-157": 13,
+      "R-160": 20,
+      "R-164": 7,
+      "R-192": 16,
+      "R-027": 1,
+      "R-034": 1,
+      "R-051": 5,
+      "R-193": 6,
+      "R-009": 3,
+      "R-041": 1,
+      "R-016": 1,
+      "R-017": 2,
+      "R-018": 1,
+      "R-019": 2,
+      "R-010": 2,
+      "R-021": 1,
+      "R-035": 1,
+      "R-036": 1,
+      "R-159": 3,
+      "R-180": 35,
+      "R-184": 1,
+      "R-185": 1,
+      "R-101": 6,
+      "R-028": 1,
+      "R-029": 1,
+      "R-030": 1,
+      "R-031": 1,
+      "R-032": 1,
+      "R-183": 1,
+      "R-040": 2,
+      "R-063": 1,
+      "R-054": 1,
+      "R-095": 1,
+      "R-001": 7,
+      "R-013": 1,
+      "R-012": 1,
+      "R-014": 2,
+      "R-152": 1,
+      "R-148": 1,
+      "R-002": 4,
+      "R-022": 2,
+      "R-033": 1,
+      "R-132": 1,
+      "R-133": 1,
+      "R-134": 1,
+      "R-135": 1,
+      "R-181": 1,
+      "R-182": 1,
+      "R-216": 1,
+      "R-217": 1,
+      "R-165": 2,
+      "R-178": 3,
+      "R-186": 1,
+      "R-187": 1,
+      "R-007": 1,
+      "R-098": 2,
+      "R-194": 1,
+      "R-131": 1,
+      "R-177": 2,
+      "R-061": 2,
+      "R-062": 2,
+      "R-163": 2,
+      "R-176": 2,
+      "R-042": 1,
+      "R-161": 1,
+      "R-023": 2,
+      "R-024": 2,
+      "R-025": 3,
+      "R-026": 1,
+      "R-065": 1,
+      "R-126": 61,
+      "R-049": 1,
+      "R-011": 3,
+      "R-043": 12,
+      "R-118": 7,
+      "R-119": 3,
+      "R-037": 1,
+      "R-110": 3,
+      "R-120": 1,
+      "R-066": 10,
+      "R-218": 1,
+      "R-219": 1,
+      "R-220": 1,
+      "R-221": 1,
+      "R-222": 1,
+      "R-223": 1,
+      "R-224": 2,
+      "R-225": 2,
+      "R-111": 3,
+      "R-112": 2,
+      "R-004": 2,
+      "R-044": 1,
+      "R-121": 1,
+      "R-124": 1,
+      "R-127": 12,
+      "R-128": 3,
+      "R-168": 2,
+      "R-171": 2,
+      "R-172": 2,
+      "R-170": 1,
+      "R-097": 2,
+      "R-188": 1,
+      "R-189": 1,
+      "R-190": 1,
+      "R-191": 1
+    },
+    "totals": {
+      "neutralizedFiles": 144,
+      "replacements": 1996,
+      "byCategory": {
+        "brand": 129,
+        "domain": 429,
+        "internal": 1366,
+        "license": 16,
+        "secret": 56
+      },
+      "skippedStagingNeutralize": 4
+    },
+    "baseline": {
+      "brand": {
+        "files": 41,
+        "hits": 130
+      },
+      "domain": {
+        "files": 45,
+        "hits": 345
+      },
+      "internal": {
+        "files": 118,
+        "hits": 1567
+      },
+      "fixture": {
+        "files": 12,
+        "hits": 16
+      },
+      "licenseRefFiles": 11
+    }
+  },
+  "exclusions": [
+    {
+      "path": "rag/eval.mjs",
+      "reason": "领域评测集（36 处领域命中集中/大量领域语料 ID 与查询），逐词替换会留下语义坏死的评测集；无 npm test 依赖；见映射清单 0.2 说明"
+    },
+    {
+      "path": "scripts/measure-memory.mjs",
+      "reason": "动态 import rag/eval.mjs 的 QUERIES，自身含品牌 1 处/内部编号 4 处；不在 npm test 内；随 eval.mjs 一并排除；见映射清单说明"
+    }
+  ],
+  "renames": [
+    {
+      "fromSha256": "dba8ad50bf5b63beb8b3decdf1653f36f75818bddbe97aac0612050d35382ecd",
+      "to": "tests/backend/admin-users.test.mjs",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    },
+    {
+      "fromSha256": "c6b3e81cc27238a5363fb0f3597bd91e2d32714d1800f14f4711a90e31b93643",
+      "to": "tests/backend/fixtures/corpus/seasonal-01.json",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    },
+    {
+      "fromSha256": "0ae7a8c70b4781cd802be5dfd3706caa87124c75410c5f268d37e6806f99d848",
+      "to": "tests/backend/fixtures/prompts/guidance-extra.md",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    },
+    {
+      "fromSha256": "6d204286d4dffd05261097b93a74b4ad31335c83b8c4d816d6cc5f7bd9ee0d30",
+      "to": "tests/backend/fixtures/prompts/topics-guide.md",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    },
+    {
+      "fromSha256": "97b97ffe36a68f67835ccc69d2f5f4d2fc938835ad8ce364c94a7323ff9e2f80",
+      "to": "tests/backend/fixtures/library/worksheet-demo-a.json",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    },
+    {
+      "fromSha256": "c1c099ce1258249b130cd1263300377cf97bf851ca4b98f6796d90d19b65dc43",
+      "to": "tests/backend/fixtures/library/worksheet-demo-b.json",
+      "note": "改名来源路径为构建器内部映射，按约定只记录 sha256"
+    }
+  ],
+  "overlay": {
+    "source": "docs/open-source/templates/oss-v02",
+    "files": [
+      ".editorconfig",
+      ".env.example",
+      ".gitignore",
+      "package.json",
+      "VERSION"
+    ]
+  },
+  "staging": {
+    "source": "docs/open-source/v02-release-pack",
+    "ready": true,
+    "files": [
+      "docs/LICENSE-DOCS.md",
+      "LICENSE",
+      "NOTICE",
+      "THIRD_PARTY.md",
+      ".github/ISSUE_TEMPLATE/bug_report.yml",
+      ".github/ISSUE_TEMPLATE/feature_request.yml",
+      ".github/workflows/ci.yml",
+      "CHANGELOG.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "docs/EXTENDING.md",
+      "examples/domain-demo/config.example.env",
+      "examples/domain-demo/corpus/kitchen-recipes-01.json",
+      "examples/domain-demo/corpus/travel-notes-01.json",
+      "examples/domain-demo/prompts/citation-rules.md",
+      "examples/domain-demo/prompts/safety.md",
+      "examples/domain-demo/prompts/style-csb.md",
+      "examples/domain-demo/prompts/system.md",
+      "examples/domain-demo/README.md",
+      "README.md",
+      "SECURITY.md"
+    ]
+  },
+  "licenseRefSyntheticFixtures": {
+    "marker": "LicenseRef-Synthetic-Fixture",
+    "files": [
+      "CHANGELOG.md",
+      "public/js/reader-notice.js",
+      "tests/backend/docs.test.mjs",
+      "tests/backend/fixtures/corpus/seasonal-01.json",
+      "tests/backend/fixtures/library/book-alpha-01.json",
+      "tests/backend/fixtures/library/book-alpha-02.json",
+      "tests/backend/fixtures/library/book-beta-01.json",
+      "tests/backend/fixtures/library/igo-demo-01.json",
+      "tests/backend/fixtures/library/worksheet-demo-a.json",
+      "tests/backend/fixtures/library/worksheet-demo-b.json",
+      "tests/backend/helpers.mjs"
+    ]
+  },
+  "totals": {
+    "files": 212,
+    "bytes": 2665500,
+    "neutralizedFiles": 144,
+    "replacements": 1996,
+    "testsExpected": 668
+  },
+  "residual": {
+    "brand": 0,
+    "domain": 0,
+    "internal": 0,
+    "license": 0,
+    "hard-forbidden": 0
+  },
+  "treeSha256": "a0b745a295f8ff883e77e9599777a295b673920b84e385c8b0047e6b0321207d",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "origin": "overlay",
+      "bytes": 285,
+      "sha256": "17b27fd3bdad1ae1c2dc8540f902b281e231b55e68474a2c0e0e6718c60033c6"
+    },
+    {
+      "path": ".env.example",
+      "origin": "overlay",
+      "bytes": 8970,
+      "sha256": "b9ed67a97fc2914e951d457f18d3c8f99e18db66a0fb62a294b0c818812fd5f8",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "origin": "staging-repo",
+      "bytes": 1772,
+      "sha256": "5cc3706f0c1ee7135df76adf6f7e0a92af3c945810d8871d471d81c6c5f9d53d"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "origin": "staging-repo",
+      "bytes": 1612,
+      "sha256": "ca861cc53a5f776d9891101506a8e91027408275ca587e55be69d154e58b824a"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "origin": "staging-repo",
+      "bytes": 556,
+      "sha256": "f2f691d649d609acf8efa940c35013c0867f307747e719923e2261a5353e5e51"
+    },
+    {
+      "path": ".gitignore",
+      "origin": "overlay",
+      "bytes": 324,
+      "sha256": "97940eeee5cae3e58d8275ca9df52f05b50306eba6e159914d2d63fde584fc19",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "bin/serve.mjs",
+      "origin": "base",
+      "bytes": 9338,
+      "sha256": "20228b8698038c16390c8b36c5dee39ade8cea4503c11924dacdcb3b0a7e3672",
+      "neutralized": [
+        "R-006",
+        "R-008",
+        "R-060",
+        "R-100",
+        "R-103",
+        "R-105",
+        "R-137",
+        "R-149",
+        "R-150",
+        "R-151",
+        "R-154",
+        "R-156",
+        "R-158",
+        "R-166",
+        "R-167"
+      ],
+      "replacements": 15
+    },
+    {
+      "path": "CHANGELOG.md",
+      "origin": "staging-repo",
+      "bytes": 3045,
+      "sha256": "6a0b17728a319a5471daf0249a054a24275f9fdfed4500ad8545177d654194c3"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "origin": "staging-repo",
+      "bytes": 2405,
+      "sha256": "b04441dca8f4fc7c2c6e1a5a9e1a66b46d308223bfa35a89a2fdbbd82441aaa7"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "origin": "staging-repo",
+      "bytes": 3637,
+      "sha256": "c4f4a7e62401ecda78567003d3e0d0dcae5bca40acbbaeda2b8c1063cd2778b7"
+    },
+    {
+      "path": "corpus/demo-handbook-01-overview.json",
+      "origin": "base",
+      "bytes": 2909,
+      "sha256": "569178a6d18893b9f3bb5cd096e6385e2471f1eb255a2361b2ab69d4d9eb74a6"
+    },
+    {
+      "path": "corpus/demo-handbook-02-operations.json",
+      "origin": "base",
+      "bytes": 2844,
+      "sha256": "077d664c05f6e939ececf1f0bd03c5e23041e94de993d24121294784049e5cdb"
+    },
+    {
+      "path": "corpus/demo-handbook-03-extending.json",
+      "origin": "base",
+      "bytes": 3413,
+      "sha256": "82c62d1a9b12be89a9991e9850416db8d1c9e1f019de0184ed0fea8c9a19a731"
+    },
+    {
+      "path": "corpus/README.md",
+      "origin": "base",
+      "bytes": 1499,
+      "sha256": "2cfacbbe2aa4a7ba03fad054fd05bca1101c0b0e73d5e32da64e110b780709b8"
+    },
+    {
+      "path": "docs/EXTENDING.md",
+      "origin": "staging-repo",
+      "bytes": 13174,
+      "sha256": "52310392275259cd4a4afef3381e67b89e35a1bfdb38d9445eabe9cea2dff64c",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "docs/LICENSE-DOCS.md",
+      "origin": "staging-license",
+      "bytes": 4960,
+      "sha256": "fe0ac2c0e0ec27839b8b9c8bd369deac574cb5a397b8fe9315d5e72c5a7c9524"
+    },
+    {
+      "path": "examples/domain-demo/config.example.env",
+      "origin": "staging-repo",
+      "bytes": 407,
+      "sha256": "58fc918706e4b5c2b45302b23ac351526adf958d72dda2b4e676844b7f5460e4"
+    },
+    {
+      "path": "examples/domain-demo/corpus/kitchen-recipes-01.json",
+      "origin": "staging-repo",
+      "bytes": 1616,
+      "sha256": "1f0fcb61f88358c5238100f70e272751e15af12c1d143e772008203785bd0873"
+    },
+    {
+      "path": "examples/domain-demo/corpus/travel-notes-01.json",
+      "origin": "staging-repo",
+      "bytes": 1693,
+      "sha256": "07238211c12ff1ddd7258b0adbd79765c8bd1aa8a7ab0684cc853f586af3d414"
+    },
+    {
+      "path": "examples/domain-demo/prompts/citation-rules.md",
+      "origin": "staging-repo",
+      "bytes": 492,
+      "sha256": "5441b64149fc2b61fd5aae4af6dff6fcb3cd7c26c2fc786f87156f70ba5389cb"
+    },
+    {
+      "path": "examples/domain-demo/prompts/safety.md",
+      "origin": "staging-repo",
+      "bytes": 713,
+      "sha256": "11dbb43736057cef8416404f92a16ebba100d619eff5eea6fc14345d1d57540f"
+    },
+    {
+      "path": "examples/domain-demo/prompts/style-csb.md",
+      "origin": "staging-repo",
+      "bytes": 619,
+      "sha256": "8c2a1415325dc73ff176202b67ec7ef7ef3de4621c0a43da0837da4053816f91"
+    },
+    {
+      "path": "examples/domain-demo/prompts/system.md",
+      "origin": "staging-repo",
+      "bytes": 1184,
+      "sha256": "17d540da6a9d7a8707a5cce076269df82a108daf99983c944b1adb909c843b88"
+    },
+    {
+      "path": "examples/domain-demo/README.md",
+      "origin": "staging-repo",
+      "bytes": 2403,
+      "sha256": "adf17e6f71e7c5b7093766f10ded583af615ac4b7255c637b761bdf3567e874b"
+    },
+    {
+      "path": "LICENSE",
+      "origin": "staging-license",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "NOTICE",
+      "origin": "staging-license",
+      "bytes": 4055,
+      "sha256": "89e15cdc2e122240f225a83b928e76ae1a59939c63fb49475cf81dbf74e28e04",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "package.json",
+      "origin": "overlay",
+      "bytes": 1090,
+      "sha256": "6d6064f6e42b96a2f005af9798a1335626ef57160d92ea0c721f5418bbabbaba",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "prompts/citation-rules.md",
+      "origin": "base",
+      "bytes": 512,
+      "sha256": "93194e7bc65bba37e160fc430d025f7bd490e9c28d16d6cedf8361cd80f7f0a0"
+    },
+    {
+      "path": "prompts/memory-extract.md",
+      "origin": "base",
+      "bytes": 556,
+      "sha256": "6e03828e796219309ebf0de90c16c9e8579d818a1a669a7b98e45a262e564f50"
+    },
+    {
+      "path": "prompts/README.md",
+      "origin": "base",
+      "bytes": 1152,
+      "sha256": "d5adb2f814bebc9dc7d36b2c42db81b2c2eef283861955732c977061df171077",
+      "neutralized": [
+        "R-129",
+        "R-130"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "prompts/safety.md",
+      "origin": "base",
+      "bytes": 1065,
+      "sha256": "285fdc2d91acb90e85f0fb96e1ad2d4f42e791a3175108dc6c30f5b65a1f2ae2",
+      "neutralized": [
+        "R-175"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "prompts/style-csb.md",
+      "origin": "base",
+      "bytes": 546,
+      "sha256": "ea7cbf3efb54b709159f234c7fa279be0e08ba28624ca106f49df5fa5618f5d9"
+    },
+    {
+      "path": "prompts/system.md",
+      "origin": "base",
+      "bytes": 1388,
+      "sha256": "17d19a15ea760b257989a94a65ef1117242bc604c8ca7481dd11d51f33652dca",
+      "neutralized": [
+        "R-175"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "prompts/websearch-rules.md",
+      "origin": "base",
+      "bytes": 519,
+      "sha256": "05f16773f306536616d72cbf781a700187fd7129967c32b8333a93dcf5b8da5d"
+    },
+    {
+      "path": "public/account.html",
+      "origin": "base",
+      "bytes": 8187,
+      "sha256": "27fdd2249f0fe9a87af5372ce4199932cbc3fc6c57d7fe761ee9ddbf8b9d28e4",
+      "neutralized": [
+        "R-039",
+        "R-045",
+        "R-103"
+      ],
+      "replacements": 7
+    },
+    {
+      "path": "public/admin.html",
+      "origin": "base",
+      "bytes": 15351,
+      "sha256": "850ea6d86d87c73e78e696bdd140e3bd6023ca2cc5fa900fff9b90740f30b22f",
+      "neutralized": [
+        "R-045",
+        "R-105"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "public/css/admin.css",
+      "origin": "base",
+      "bytes": 28890,
+      "sha256": "6f3b81141ea7a033cf807f0949dda8f84c6694603b5a973022aacae6ceaa090e",
+      "neutralized": [
+        "R-045",
+        "R-103"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "public/css/style.css",
+      "origin": "base",
+      "bytes": 220011,
+      "sha256": "8efa3015e1103c182a50dd306b1909907049e12faaf8007f0e64bccbb386afb9",
+      "neutralized": [
+        "R-005",
+        "R-045",
+        "R-060",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-108",
+        "R-109",
+        "R-136",
+        "R-137",
+        "R-138",
+        "R-155",
+        "R-156",
+        "R-157",
+        "R-158",
+        "R-160",
+        "R-164",
+        "R-192"
+      ],
+      "replacements": 106
+    },
+    {
+      "path": "public/error.html",
+      "origin": "base",
+      "bytes": 1933,
+      "sha256": "c1a863de5a5b44ea4e07ea74f5243d66905e3af7b9a49fd8336bf5e5cbb8dd5e",
+      "neutralized": [
+        "R-045"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "public/feedback.html",
+      "origin": "base",
+      "bytes": 3293,
+      "sha256": "d903fbf350e14b5144a5fc7f89bf30973ef2c53a9a10030be1b35e35b430189d",
+      "neutralized": [
+        "R-045"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "public/fonts/hello-subset.woff2",
+      "origin": "base",
+      "bytes": 1540,
+      "sha256": "1656bd136e443f73ae7e250882d6edbb666c42d0319e03b212bce2540d034048"
+    },
+    {
+      "path": "public/fonts/OFL-MaShanZheng.txt",
+      "origin": "base",
+      "bytes": 4397,
+      "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+    },
+    {
+      "path": "public/icons/apple-touch-icon.png",
+      "origin": "base",
+      "bytes": 2755,
+      "sha256": "fa1dc62e16260974b726cc07c8c898611667978826cd6ab9a9a35cf5a614f938"
+    },
+    {
+      "path": "public/icons/favicon.svg",
+      "origin": "base",
+      "bytes": 288,
+      "sha256": "13937cbcdf75d251cc6525e6432e22c09871ddc4113ab392142a6089a4caea7a",
+      "neutralized": [
+        "R-105"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "origin": "base",
+      "bytes": 2893,
+      "sha256": "c8ab80c9d8a7ebcd45b64219a9e6e2ad001044e5c690916abe7436bf52e2b40a"
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "origin": "base",
+      "bytes": 8699,
+      "sha256": "c82eea3469adc9764ad440d3fbc59ad9034b7e6ea688aace84e687c308f6be54"
+    },
+    {
+      "path": "public/icons/icon-maskable-512.png",
+      "origin": "base",
+      "bytes": 7073,
+      "sha256": "af69572728b5ab5e310a0f837200e8db085b4f69d40b8aa1c13d4f8444e3237b"
+    },
+    {
+      "path": "public/index.html",
+      "origin": "base",
+      "bytes": 26173,
+      "sha256": "9c7b89b7b5ccdac28c674dd756e9dbd9e5d99f44dbc04a513e1d947d79b39903",
+      "neutralized": [
+        "R-027",
+        "R-034",
+        "R-045",
+        "R-051",
+        "R-060",
+        "R-100",
+        "R-103",
+        "R-105",
+        "R-136",
+        "R-137",
+        "R-138",
+        "R-192",
+        "R-193"
+      ],
+      "replacements": 54
+    },
+    {
+      "path": "public/js/account.js",
+      "origin": "base",
+      "bytes": 25792,
+      "sha256": "d828fa65d040b2cecb5c19f4d15c4a139a3d87f660dd7f9ff825a725632d2ec7",
+      "neutralized": [
+        "R-009",
+        "R-041",
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 11
+    },
+    {
+      "path": "public/js/admin.js",
+      "origin": "base",
+      "bytes": 72795,
+      "sha256": "079dad2b389f63455159629acc7a9b96888ad40af4ba294814a8243659abe111",
+      "neutralized": [
+        "R-045",
+        "R-102",
+        "R-103",
+        "R-158"
+      ],
+      "replacements": 15
+    },
+    {
+      "path": "public/js/api.js",
+      "origin": "base",
+      "bytes": 37642,
+      "sha256": "790b86c7b644e141db82a021f2066c621cbaab011758801bd751b5a162d0b920",
+      "neutralized": [
+        "R-016",
+        "R-017",
+        "R-018",
+        "R-019",
+        "R-060",
+        "R-100",
+        "R-103",
+        "R-105",
+        "R-106",
+        "R-109",
+        "R-136",
+        "R-137",
+        "R-156",
+        "R-160",
+        "R-164",
+        "R-192"
+      ],
+      "replacements": 48
+    },
+    {
+      "path": "public/js/app.js",
+      "origin": "base",
+      "bytes": 202612,
+      "sha256": "3c6b10d00038abd3a9492679786c203f5d68f6d2c1ad9e5bc15ebe0e3ddf62bd",
+      "neutralized": [
+        "R-010",
+        "R-021",
+        "R-035",
+        "R-036",
+        "R-045",
+        "R-051",
+        "R-060",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-108",
+        "R-109",
+        "R-136",
+        "R-137",
+        "R-138",
+        "R-158",
+        "R-159",
+        "R-160",
+        "R-164",
+        "R-166",
+        "R-180",
+        "R-184",
+        "R-185",
+        "R-192",
+        "R-193"
+      ],
+      "replacements": 173
+    },
+    {
+      "path": "public/js/attachments.js",
+      "origin": "base",
+      "bytes": 10849,
+      "sha256": "354cabe0c2b4d053120c99374a200160c7f6b2b1b05c7946a1a8ce1c514b7d95",
+      "neutralized": [
+        "R-101",
+        "R-102",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 7
+    },
+    {
+      "path": "public/js/effort.js",
+      "origin": "base",
+      "bytes": 3286,
+      "sha256": "d3363fcdeff6b534ad933ec7543d4e4f05d09d6d2bb9f709ed75f76314b9b3e3",
+      "neutralized": [
+        "R-017",
+        "R-158"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "public/js/feedback.js",
+      "origin": "base",
+      "bytes": 6720,
+      "sha256": "8c93841531ca59d73148f48b4c5f32b0facdb50e1be8e8543c0eac4a4257d178",
+      "neutralized": [
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "public/js/login.js",
+      "origin": "base",
+      "bytes": 6649,
+      "sha256": "4a9651df2f8146143e41984b1fe02562f4cef1cc17c789d1b82c0c5e8857be79",
+      "neutralized": [
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "public/js/markup.js",
+      "origin": "base",
+      "bytes": 8787,
+      "sha256": "a339e104cba0c883e6d1dc957c4923c480916087c88a9250ec18fb4cfe44dd12",
+      "neutralized": [
+        "R-010",
+        "R-100",
+        "R-158"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "public/js/reader-notice.js",
+      "origin": "base",
+      "bytes": 1727,
+      "sha256": "476d2ca52178bb43898b5e027230ae42b9f594f1d523e048ce95fb1bf9865fc6",
+      "neutralized": [
+        "R-028",
+        "R-029",
+        "R-030",
+        "R-031",
+        "R-032",
+        "R-051",
+        "R-138",
+        "R-158",
+        "R-183"
+      ],
+      "replacements": 14
+    },
+    {
+      "path": "public/js/sse.js",
+      "origin": "base",
+      "bytes": 4274,
+      "sha256": "7418023983626b5b49ab4d8f342d46187e0c1ddd916d4f5e77cba8f2a38a3218",
+      "neutralized": [
+        "R-158"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "public/js/viewport-diag.js",
+      "origin": "base",
+      "bytes": 16084,
+      "sha256": "c6ad3794b1f2532262eb2ba69cb448d69892d0703c769d8eacb7a5dbf6a44515",
+      "neutralized": [
+        "R-102"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "public/js/viewport.js",
+      "origin": "base",
+      "bytes": 23758,
+      "sha256": "afb212e5ade86881a0d69cb08959f8ecc2add76bf1c7bf758514c2b0c9caa6f3",
+      "neutralized": [
+        "R-102",
+        "R-104",
+        "R-105",
+        "R-158"
+      ],
+      "replacements": 8
+    },
+    {
+      "path": "public/login.html",
+      "origin": "base",
+      "bytes": 4119,
+      "sha256": "dab67c116c069e98ebb6cff3352aac7abab5863e621e72f1c602dfd76c4a72ff",
+      "neutralized": [
+        "R-045"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "origin": "base",
+      "bytes": 758,
+      "sha256": "672d591ae16c90160dcb6a8f462f7c8abd1cad4d88ce37e28a31a59081bc6e01",
+      "neutralized": [
+        "R-045"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "public/privacy.html",
+      "origin": "base",
+      "bytes": 1279,
+      "sha256": "ba2948ff5782ac7ae180d35230bf4e70bb95302ae0d2860c1a51c550382f0716"
+    },
+    {
+      "path": "public/terms.html",
+      "origin": "base",
+      "bytes": 1207,
+      "sha256": "40db6e799f483b9f60057a29d1739e15c27223fa17e94f0859cf78e2d3c2e535"
+    },
+    {
+      "path": "rag/index.mjs",
+      "origin": "base",
+      "bytes": 7318,
+      "sha256": "e32f3a65d81b71541d62cc9ec80c63a08e86fd79b2689693be0fb0c46bb8da7c"
+    },
+    {
+      "path": "rag/relevance.mjs",
+      "origin": "base",
+      "bytes": 9551,
+      "sha256": "2203a97f142c8af7a5725c76c018916ea7b454836e26739601bfd19f7c2c53e6",
+      "neutralized": [
+        "R-040",
+        "R-063",
+        "R-102",
+        "R-105"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "rag/rerank.mjs",
+      "origin": "base",
+      "bytes": 7858,
+      "sha256": "69640e52a5121f6cd64d73c735af0d9a9e63869fd1cfcb2ed484c3aaf6cb4413",
+      "neutralized": [
+        "R-054",
+        "R-095",
+        "R-158"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "rag/tokenize.mjs",
+      "origin": "base",
+      "bytes": 4080,
+      "sha256": "f8b60ba7b4a300ef74123521b4a4a1ee7a92eebcb28c16074377abea96b217d0"
+    },
+    {
+      "path": "README.md",
+      "origin": "staging-repo",
+      "bytes": 27968,
+      "sha256": "944c89e649f62446f10fd06e462dad2d91a3a1de19a909d85d3797a15a0e0080",
+      "overriddenByOverlay": true
+    },
+    {
+      "path": "scripts/backup-data.mjs",
+      "origin": "base",
+      "bytes": 10694,
+      "sha256": "b294a5f37c431c30a6365407a65be716d66da191843b2bcf19aad1a623bdc515",
+      "neutralized": [
+        "R-104",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "scripts/drill-restore.mjs",
+      "origin": "base",
+      "bytes": 23624,
+      "sha256": "8ca6d020a1511a5f31739c5e275c33908bfbc24523e61b9aa90d771bf04527e5",
+      "neutralized": [
+        "R-001",
+        "R-013",
+        "R-045",
+        "R-100",
+        "R-104",
+        "R-105",
+        "R-158",
+        "R-166"
+      ],
+      "replacements": 20
+    },
+    {
+      "path": "scripts/gen-icons.mjs",
+      "origin": "base",
+      "bytes": 6364,
+      "sha256": "b38dd4e2f8fe300502040875dc8b5d192d278b91b62ffcc35540ff1fb3cba5ac",
+      "neutralized": [
+        "R-012",
+        "R-100",
+        "R-105"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "scripts/migrate-multiuser.mjs",
+      "origin": "base",
+      "bytes": 13514,
+      "sha256": "44de6ee477260fc3ef32cda8ecbaf17b5105317b23288f34fe3a0b6b47c5b4a6",
+      "neutralized": [
+        "R-104"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "scripts/restore-data.mjs",
+      "origin": "base",
+      "bytes": 23297,
+      "sha256": "99456be7e5dfeab28b7fbd678223df591c6afe9130feb866855219299bf339eb",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-158",
+        "R-160",
+        "R-166"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "scripts/rotate-data-key.mjs",
+      "origin": "base",
+      "bytes": 16012,
+      "sha256": "0fdacb45ca8bf911d0342b09a7c5967260e66f0cc24b09cad7fb7164b0b041c9",
+      "neutralized": [
+        "R-014",
+        "R-100",
+        "R-102",
+        "R-104",
+        "R-106",
+        "R-158",
+        "R-160"
+      ],
+      "replacements": 11
+    },
+    {
+      "path": "scripts/test-shard.mjs",
+      "origin": "base",
+      "bytes": 3442,
+      "sha256": "7efc4c5a45c78257b912293a6a6e247e1123bcce4144a65fef05e37a038b46be",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "SECURITY.md",
+      "origin": "staging-repo",
+      "bytes": 2916,
+      "sha256": "729186992aafd0b6a2beebec65433cf5186cd3cca3e3974932a35f94cd021812"
+    },
+    {
+      "path": "server/admin.mjs",
+      "origin": "base",
+      "bytes": 70588,
+      "sha256": "29a827f7450823806186ab2de8190c66407de382695138e47f74bcfdc5484064",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-107",
+        "R-157",
+        "R-158"
+      ],
+      "replacements": 58
+    },
+    {
+      "path": "server/app.mjs",
+      "origin": "base",
+      "bytes": 45520,
+      "sha256": "ba628ffaa8d359b53f48bc5a7e3359ae866ad14461c8c477add202f8c5c34bb4",
+      "neutralized": [
+        "R-008",
+        "R-060",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-107",
+        "R-136",
+        "R-137",
+        "R-152",
+        "R-155",
+        "R-157",
+        "R-158",
+        "R-160",
+        "R-166"
+      ],
+      "replacements": 99
+    },
+    {
+      "path": "server/at-rest.mjs",
+      "origin": "base",
+      "bytes": 23355,
+      "sha256": "8e87c142efa56898498d1f193f60751441d89f46bcf1302b5c2b546474943cf2",
+      "neutralized": [
+        "R-001",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-158"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "server/attachments.mjs",
+      "origin": "base",
+      "bytes": 21034,
+      "sha256": "215ab3c39ed166158d65c1bd4f61cfd9118afcec62c54f9461d6ec6787a3f9fa",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 11
+    },
+    {
+      "path": "server/audit.mjs",
+      "origin": "base",
+      "bytes": 8785,
+      "sha256": "1c646b9bd41bf099e55ff5c06bb29074a0c909029d0625c211415c63535af728",
+      "neutralized": [
+        "R-100",
+        "R-106",
+        "R-157",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/auth-routes.mjs",
+      "origin": "base",
+      "bytes": 13109,
+      "sha256": "c2339cc55ee57b35b31226131843d8cece0e88d176c76bc8bacbf566f1c214df",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-108",
+        "R-155",
+        "R-158"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "server/auth.mjs",
+      "origin": "base",
+      "bytes": 9348,
+      "sha256": "6a72f006c94626d2fd7801e08eeeaf70c0bbaa409704cc3d2276afad018bb36f",
+      "neutralized": [
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-107"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/byok-providers.mjs",
+      "origin": "base",
+      "bytes": 20126,
+      "sha256": "c697faba393cfdae19730e1c93d763a126397078599fbd41e7a625b899473969",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-158",
+        "R-160"
+      ],
+      "replacements": 15
+    },
+    {
+      "path": "server/byok-routes.mjs",
+      "origin": "base",
+      "bytes": 8074,
+      "sha256": "1cc380ec9b7aedf70f2d0b25ed846cfcb75744358af31b999dbf814b8281eb96",
+      "neutralized": [
+        "R-100",
+        "R-105",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/byok-upstream.mjs",
+      "origin": "base",
+      "bytes": 14124,
+      "sha256": "1273c6784b4e77b54440a10f8cf79069babd77c3354d9d34877d7f9caa2c553b",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 10
+    },
+    {
+      "path": "server/byok.mjs",
+      "origin": "base",
+      "bytes": 28469,
+      "sha256": "46afa0a189ca512065e59161daa9f21a4318e92d2c3697625e9b98efc82a5c22",
+      "neutralized": [
+        "R-039",
+        "R-100",
+        "R-103",
+        "R-105",
+        "R-106",
+        "R-158",
+        "R-166"
+      ],
+      "replacements": 30
+    },
+    {
+      "path": "server/chat.mjs",
+      "origin": "base",
+      "bytes": 32028,
+      "sha256": "438e2ca6977aea9d20f20b0eed141697a1be22a579f35f60c6bc2a16d0879bc0",
+      "neutralized": [
+        "R-060",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-149",
+        "R-158"
+      ],
+      "replacements": 62
+    },
+    {
+      "path": "server/citations.mjs",
+      "origin": "base",
+      "bytes": 2654,
+      "sha256": "ecf9b07c5fb4eab33d50a8b191a0111868eabd2ebf3ad59851b36377d387d52d",
+      "neutralized": [
+        "R-040",
+        "R-102",
+        "R-105"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/config.mjs",
+      "origin": "base",
+      "bytes": 25367,
+      "sha256": "17f4118df6f42c972dd76af12161c27ff5fe3dfd4e55e160e93bbc346064211c",
+      "neutralized": [
+        "R-060",
+        "R-100",
+        "R-103",
+        "R-104",
+        "R-107",
+        "R-108",
+        "R-136",
+        "R-148",
+        "R-149",
+        "R-150",
+        "R-157",
+        "R-158",
+        "R-166"
+      ],
+      "replacements": 57
+    },
+    {
+      "path": "server/consent.mjs",
+      "origin": "base",
+      "bytes": 1128,
+      "sha256": "f570844d8cbc8fe325135dbf3ed8c17cd339a6841c04f0b17423ac72a4993539",
+      "neutralized": [
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-107"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/conversations.mjs",
+      "origin": "base",
+      "bytes": 5050,
+      "sha256": "48256672d5f8ccad4e8ea7703bc48a275b07a426d4bb391ee5d150309bfa0783",
+      "neutralized": [
+        "R-100",
+        "R-158"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "server/corpus.mjs",
+      "origin": "base",
+      "bytes": 2387,
+      "sha256": "e01ea5a5a5d011f83e97f2de1312e1390bc48cfc9e8af3273b1aa27fadc10a37",
+      "neutralized": [
+        "R-102",
+        "R-105",
+        "R-158"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "server/docstore.mjs",
+      "origin": "base",
+      "bytes": 3639,
+      "sha256": "6f9d7dac480fcc28393083ac478b37225b5b6fd262eb5f0cbec1cbb7aff3ca32",
+      "neutralized": [
+        "R-103",
+        "R-158"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "server/envelope.mjs",
+      "origin": "base",
+      "bytes": 17431,
+      "sha256": "f9957a75ab316729989f4dd5ac1b429c974f11821dc71236b86f0c56a6c44ee5",
+      "neutralized": [
+        "R-002",
+        "R-100",
+        "R-105",
+        "R-158"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "server/feedback.mjs",
+      "origin": "base",
+      "bytes": 18672,
+      "sha256": "931e7628af2465c26cbb7b575e5821e130a83c5b7d41fdb440c202df11771c63",
+      "neutralized": [
+        "R-100",
+        "R-104",
+        "R-105",
+        "R-107",
+        "R-157",
+        "R-158"
+      ],
+      "replacements": 12
+    },
+    {
+      "path": "server/health.mjs",
+      "origin": "base",
+      "bytes": 30251,
+      "sha256": "6c6cf97712c629718f6f378e068e91cfa4b14c5183a59fedefcfa9e63a399ea3",
+      "neutralized": [
+        "R-100",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-136"
+      ],
+      "replacements": 13
+    },
+    {
+      "path": "server/http-utils.mjs",
+      "origin": "base",
+      "bytes": 2594,
+      "sha256": "39b5a6b018c6341fff2c2b8d3bd2e008741dd03896b4f0c3c05c905f308034e6",
+      "neutralized": [
+        "R-137"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "server/index.mjs",
+      "origin": "base",
+      "bytes": 8607,
+      "sha256": "23cf74e9c0e3efa5751b442fa622523f1c6a222bdd91c3d1a705b685bc638fe6",
+      "neutralized": [
+        "R-022",
+        "R-100",
+        "R-103",
+        "R-107"
+      ],
+      "replacements": 7
+    },
+    {
+      "path": "server/library.mjs",
+      "origin": "base",
+      "bytes": 34145,
+      "sha256": "c84141eaa7329cb064b9efdca85da5f537cf7b822f8b0d1db22ef6787e053c77",
+      "neutralized": [
+        "R-033",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-109",
+        "R-132",
+        "R-133",
+        "R-134",
+        "R-135",
+        "R-137",
+        "R-138",
+        "R-157",
+        "R-158",
+        "R-160",
+        "R-181",
+        "R-182",
+        "R-216",
+        "R-217"
+      ],
+      "replacements": 77
+    },
+    {
+      "path": "server/lifecycle.mjs",
+      "origin": "base",
+      "bytes": 4796,
+      "sha256": "2cf9e796e9bbb42a1ce4ff288d5493ea7e1d8f8e6b46418d28c669bc334778d9",
+      "neutralized": [
+        "R-104",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "server/marks.mjs",
+      "origin": "base",
+      "bytes": 17202,
+      "sha256": "de29462eae07bcc4d866583212a0cb7419bdca7cf72d94f7327b0ced9a3498c5",
+      "neutralized": [
+        "R-100",
+        "R-104",
+        "R-158",
+        "R-192"
+      ],
+      "replacements": 8
+    },
+    {
+      "path": "server/me-data.mjs",
+      "origin": "base",
+      "bytes": 11057,
+      "sha256": "c055d37baac41cde178c9ac285f60b26a44a90857655f3a36c58eccf107c62ed",
+      "neutralized": [
+        "R-009",
+        "R-103",
+        "R-104",
+        "R-107"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "server/memory-extract.mjs",
+      "origin": "base",
+      "bytes": 10132,
+      "sha256": "5cc6c5b891f2b4c0fc3c08beeaf903ad5cd367fefbba0868609bc0d13217c07d",
+      "neutralized": [
+        "R-100",
+        "R-101",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-106",
+        "R-108",
+        "R-158"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "server/memory.mjs",
+      "origin": "base",
+      "bytes": 47100,
+      "sha256": "f3a24363e32390de9f119bfaa959802174b0321d1f05b188ae0758f7cf86cda7",
+      "neutralized": [
+        "R-100",
+        "R-101",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-108",
+        "R-155",
+        "R-156",
+        "R-158",
+        "R-160",
+        "R-165",
+        "R-166",
+        "R-178",
+        "R-180",
+        "R-186",
+        "R-187"
+      ],
+      "replacements": 84
+    },
+    {
+      "path": "server/mock.mjs",
+      "origin": "base",
+      "bytes": 4163,
+      "sha256": "4ede461e7e33ec075b65d9d9789d71eab7b228382eab49763ec6a19002e1660a"
+    },
+    {
+      "path": "server/model-policy.mjs",
+      "origin": "base",
+      "bytes": 4136,
+      "sha256": "bf1dd58ab663b3c0ed9d7337bde4518674549b9a28d7689697c724bc637f6252",
+      "neutralized": [
+        "R-100",
+        "R-106",
+        "R-158"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "server/pinned-http.mjs",
+      "origin": "base",
+      "bytes": 21651,
+      "sha256": "dd7896bd8d35425c01cc3859496ec28b484eabdfd319ae00264e2b2511dd9523",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "server/prompts.mjs",
+      "origin": "base",
+      "bytes": 10769,
+      "sha256": "8bdb4cadec98c6a350d14da6508b0bb636ed3f48ad5ef82839ff57996821cbde",
+      "neutralized": [
+        "R-007",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-129",
+        "R-130",
+        "R-158",
+        "R-175"
+      ],
+      "replacements": 22
+    },
+    {
+      "path": "server/rag.mjs",
+      "origin": "base",
+      "bytes": 3024,
+      "sha256": "a08b7ca94b1d9e09dd7917cc5877f36c3ae4c7b636830cdeb770f61fd4f4add8",
+      "neutralized": [
+        "R-103"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "server/ratelimit.mjs",
+      "origin": "base",
+      "bytes": 3956,
+      "sha256": "27eaddf7cc6f7bdf649869b64963807b3956ef5d708f3e73413da7ef61a4095f",
+      "neutralized": [
+        "R-100",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "server/scales-history.mjs",
+      "origin": "base",
+      "bytes": 19410,
+      "sha256": "3a5e88cddceacbe8c282b6a3b98271b426ed4671da5bbe79205f5fab4c7d42fa",
+      "neutralized": [
+        "R-060",
+        "R-100",
+        "R-103",
+        "R-104"
+      ],
+      "replacements": 7
+    },
+    {
+      "path": "server/scales-private.mjs",
+      "origin": "base",
+      "bytes": 5139,
+      "sha256": "5aaf092fec50fc6ad384ddeaa0ed5e335ba760f6b54e5a058cba28cf09105aa6",
+      "neutralized": [
+        "R-008",
+        "R-060",
+        "R-100",
+        "R-108",
+        "R-158"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "server/scales.mjs",
+      "origin": "base",
+      "bytes": 27430,
+      "sha256": "71d9ab5d6f22f12b8c7a9c39cfefc60514d8c7bed8d076d11ce8a627e5842346",
+      "neutralized": [
+        "R-022",
+        "R-098",
+        "R-158",
+        "R-194"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "server/security.mjs",
+      "origin": "base",
+      "bytes": 14112,
+      "sha256": "a19ef65efacf071eb18b14df02955338d0130851f647a5219d6513c83e6c5e45",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-106",
+        "R-107",
+        "R-130",
+        "R-131",
+        "R-158",
+        "R-177"
+      ],
+      "replacements": 16
+    },
+    {
+      "path": "server/sessions.mjs",
+      "origin": "base",
+      "bytes": 1945,
+      "sha256": "a75c8be6730b552754e78b6a09569465d1a009bdf9adce05c062bd647808203e"
+    },
+    {
+      "path": "server/sse.mjs",
+      "origin": "base",
+      "bytes": 3259,
+      "sha256": "ae9c0137810097c6ff35bfd72a87e677d946bc8ba3fd6d08f8f53f5a03f10155"
+    },
+    {
+      "path": "server/static.mjs",
+      "origin": "base",
+      "bytes": 3228,
+      "sha256": "706e8a2fcea5437353cd434bfd327c7c9f7034e3106eeb325b33646bd6cadeff",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "server/store.mjs",
+      "origin": "base",
+      "bytes": 27833,
+      "sha256": "7997c5e8b508aa13c744d1a1ff519e582009a851bb2648c969a4c2fbf2c524ea",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-158",
+        "R-180"
+      ],
+      "replacements": 19
+    },
+    {
+      "path": "server/upstream.mjs",
+      "origin": "base",
+      "bytes": 10943,
+      "sha256": "f6f7fbea6c01630edb383cfe342a8a9e71d7caaa59f5ae1ce1ab19b5d2d664ed",
+      "neutralized": [
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "server/usage.mjs",
+      "origin": "base",
+      "bytes": 33024,
+      "sha256": "81334ba70480bcc922e2151891c7e069ee543ccf990ced5dee24d1d5ce5e81a0",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-109",
+        "R-158"
+      ],
+      "replacements": 27
+    },
+    {
+      "path": "server/user-sessions.mjs",
+      "origin": "base",
+      "bytes": 5832,
+      "sha256": "a6a5d8e4cc5acc075b80a2ca1c52498f59793a07be81802c2549887cd14aeccb",
+      "neutralized": [
+        "R-102",
+        "R-103",
+        "R-104"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "server/users.mjs",
+      "origin": "base",
+      "bytes": 15706,
+      "sha256": "bde1745bb2d33810146190e0ccedbfda347f7ef1e377f438a845ff1dfff0f25b",
+      "neutralized": [
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-107"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "server/vision.mjs",
+      "origin": "base",
+      "bytes": 17791,
+      "sha256": "a8356d7e1838b7539f2cdae68204599659c163a9fa8619f49f7ad8e818008bbf",
+      "neutralized": [
+        "R-100",
+        "R-101",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-108",
+        "R-109",
+        "R-156",
+        "R-158",
+        "R-166"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "server/websearch.mjs",
+      "origin": "base",
+      "bytes": 17882,
+      "sha256": "d705b13a02e28f4d9bae21b6282d0ee84b17daae3a08891589561d06875f614d",
+      "neutralized": [
+        "R-061",
+        "R-062",
+        "R-100",
+        "R-106",
+        "R-108",
+        "R-158",
+        "R-163",
+        "R-166",
+        "R-175",
+        "R-176",
+        "R-177"
+      ],
+      "replacements": 17
+    },
+    {
+      "path": "tests/backend/abort.test.mjs",
+      "origin": "base",
+      "bytes": 3299,
+      "sha256": "9d7a55fe941321e172c0722c39136203e2c792b637cfcb5a11a945e8790a13aa",
+      "neutralized": [
+        "R-103",
+        "R-104"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "tests/backend/admin-byok.test.mjs",
+      "origin": "base",
+      "bytes": 19011,
+      "sha256": "7cb2824dc0465f58152b841073455ff2b405615c0b3eaecf61ab2f2f48a0ca29",
+      "neutralized": [
+        "R-039",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 7
+    },
+    {
+      "path": "tests/backend/admin-users.test.mjs",
+      "origin": "base",
+      "bytes": 37985,
+      "sha256": "15ca756e47ac4e103cce512e4c268b9b16d8ebc7b8cee84b6894d65630acc63d",
+      "renamedFromSha256": "dba8ad50bf5b63beb8b3decdf1653f36f75818bddbe97aac0612050d35382ecd",
+      "neutralized": [
+        "R-042",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-157",
+        "R-158",
+        "R-161",
+        "R-163"
+      ],
+      "replacements": 12
+    },
+    {
+      "path": "tests/backend/admin.test.mjs",
+      "origin": "base",
+      "bytes": 39294,
+      "sha256": "c04d88b0b0a85af8df7bf6276a9ba02a63be11df0a2fb17c77950d26fb9adbef",
+      "neutralized": [
+        "R-104",
+        "R-107",
+        "R-157",
+        "R-158"
+      ],
+      "replacements": 8
+    },
+    {
+      "path": "tests/backend/at-rest-envelope.test.mjs",
+      "origin": "base",
+      "bytes": 22975,
+      "sha256": "5b67d8d0c39279921abd9eec3e64657ef21614b9e08e9d010f59b29ff98e5ac7",
+      "neutralized": [
+        "R-002",
+        "R-100",
+        "R-104",
+        "R-156",
+        "R-158",
+        "R-166"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "tests/backend/at-rest.test.mjs",
+      "origin": "base",
+      "bytes": 29569,
+      "sha256": "dc058d85d08eb65ec62fe76d0088be385a09852bbf0aa0b4e41d66668727d2ff",
+      "neutralized": [
+        "R-001",
+        "R-023",
+        "R-024",
+        "R-025",
+        "R-026",
+        "R-039",
+        "R-065",
+        "R-100",
+        "R-104",
+        "R-105",
+        "R-108",
+        "R-126",
+        "R-178"
+      ],
+      "replacements": 20
+    },
+    {
+      "path": "tests/backend/attachments-api.test.mjs",
+      "origin": "base",
+      "bytes": 14237,
+      "sha256": "14becbf0929c5bbdf35e04f4b2fe124e29df31c5449dbbe007090020bd9d5bd2",
+      "neutralized": [
+        "R-100",
+        "R-104"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "tests/backend/attachments-store.test.mjs",
+      "origin": "base",
+      "bytes": 10582,
+      "sha256": "d5450344df83ba12f4fe6fa8b76a18285c5f9ff78f6ed4c948457c50b153da66",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/attachments.test.mjs",
+      "origin": "base",
+      "bytes": 17512,
+      "sha256": "91f74b4e61a0608f682c48d6dca3437dbfda680521308a276a39a6d687db0e69",
+      "neutralized": [
+        "R-049",
+        "R-104"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "tests/backend/audit.test.mjs",
+      "origin": "base",
+      "bytes": 9132,
+      "sha256": "54f005577c5eab1f11890845f7a4f72c88bf69fc6bae9be8a825ea2b9827a5b3",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/auth.test.mjs",
+      "origin": "base",
+      "bytes": 18867,
+      "sha256": "8b174e4414683557f73b12ac58e1981b319f83e4bff54d2d8445667ebe84d145",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-104",
+        "R-155",
+        "R-156"
+      ],
+      "replacements": 23
+    },
+    {
+      "path": "tests/backend/backup-restore.test.mjs",
+      "origin": "base",
+      "bytes": 15951,
+      "sha256": "931dacc3ddb9b92dd48ea9f813a45a1d8291aa0344f53d5d386a851c685c1ea7",
+      "neutralized": [
+        "R-011",
+        "R-043",
+        "R-104",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 16
+    },
+    {
+      "path": "tests/backend/byok-pin.test.mjs",
+      "origin": "base",
+      "bytes": 14936,
+      "sha256": "1ba3c4cddeb4da3c20d3eaf0ade04ef9a57ab7e8e9856962111379f3d118b365",
+      "neutralized": [
+        "R-039",
+        "R-100"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "tests/backend/byok-providers.test.mjs",
+      "origin": "base",
+      "bytes": 23443,
+      "sha256": "28016c4285b376c350db457c515fc26fa90d79ada5f19e7b8be463c6b3a17887",
+      "neutralized": [
+        "R-039",
+        "R-103",
+        "R-104",
+        "R-158",
+        "R-160"
+      ],
+      "replacements": 12
+    },
+    {
+      "path": "tests/backend/byok.test.mjs",
+      "origin": "base",
+      "bytes": 28040,
+      "sha256": "a7b8088c6a8ca193f7a0b9f26fc0cac9c33a30ae5c1a2de82b3361b8b4af8351",
+      "neutralized": [
+        "R-001",
+        "R-039",
+        "R-100",
+        "R-103"
+      ],
+      "replacements": 13
+    },
+    {
+      "path": "tests/backend/chat-background.test.mjs",
+      "origin": "base",
+      "bytes": 11247,
+      "sha256": "d61e5b9192c4d31fa7291f85d85c4516d0172e362342f830490fa60bb1eb1c64",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-158"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "tests/backend/chat-byok.test.mjs",
+      "origin": "base",
+      "bytes": 32868,
+      "sha256": "e953e51f0c002859876d1501023c1dd875e7a46996a9cfc85769c92fa3a0e865",
+      "neutralized": [
+        "R-039",
+        "R-100",
+        "R-101",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-108",
+        "R-155",
+        "R-156",
+        "R-158",
+        "R-160"
+      ],
+      "replacements": 40
+    },
+    {
+      "path": "tests/backend/chat-errors.test.mjs",
+      "origin": "base",
+      "bytes": 9286,
+      "sha256": "09ce07ef4402b7a911adba9d72a6e2fe937144b9c73d66a13b6d8335453040e9"
+    },
+    {
+      "path": "tests/backend/chat-stream.test.mjs",
+      "origin": "base",
+      "bytes": 22176,
+      "sha256": "2b82ccb8b6ace419a51c5be9016a221a40b3fc52df109789c766841c528860f9",
+      "neutralized": [
+        "R-008",
+        "R-061",
+        "R-062",
+        "R-100",
+        "R-103",
+        "R-118",
+        "R-119",
+        "R-126",
+        "R-156",
+        "R-158",
+        "R-175",
+        "R-176"
+      ],
+      "replacements": 33
+    },
+    {
+      "path": "tests/backend/config-v2.test.mjs",
+      "origin": "base",
+      "bytes": 6443,
+      "sha256": "eb87fad8b6d8d782b759fd6747dc533c9939f0875c7a0d60f7bc037cd283bce3"
+    },
+    {
+      "path": "tests/backend/consent.test.mjs",
+      "origin": "base",
+      "bytes": 6525,
+      "sha256": "eec8facfccb36a255bcabde2f4e2dec5b95740edf286b372d1f5e8a3ce713fb7",
+      "neutralized": [
+        "R-103",
+        "R-104",
+        "R-107",
+        "R-155"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "tests/backend/conversations.test.mjs",
+      "origin": "base",
+      "bytes": 11084,
+      "sha256": "7aade050ed22d749036e980f94c4e3d92637a36fe96085cb7de5205b0110dd7f"
+    },
+    {
+      "path": "tests/backend/corpus.test.mjs",
+      "origin": "base",
+      "bytes": 4670,
+      "sha256": "05dc76afb49ec114ff6f65ea7e9e098577911cb21693099075d193e070d62ac7",
+      "neutralized": [
+        "R-103",
+        "R-104"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "tests/backend/credentials.test.mjs",
+      "origin": "base",
+      "bytes": 4020,
+      "sha256": "ab504a4913ff84eb1400302cb8df2dc5e31e5541dc4cb69a69fb86476b00c688",
+      "neutralized": [
+        "R-039",
+        "R-150"
+      ],
+      "replacements": 16
+    },
+    {
+      "path": "tests/backend/docs.test.mjs",
+      "origin": "base",
+      "bytes": 2898,
+      "sha256": "938968deec9f14d4e1be8141629e2134f6a277d733403c4fb2725aa482770a83",
+      "neutralized": [
+        "R-037",
+        "R-110",
+        "R-118",
+        "R-120",
+        "R-126"
+      ],
+      "replacements": 8
+    },
+    {
+      "path": "tests/backend/drill-restore.test.mjs",
+      "origin": "base",
+      "bytes": 19555,
+      "sha256": "094050fa7c934476d55e2febf79a9fb68a047cfbad1a46f2f2f834097b1c93e3",
+      "neutralized": [
+        "R-039",
+        "R-045",
+        "R-104",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 18
+    },
+    {
+      "path": "tests/backend/feedback-webhook.test.mjs",
+      "origin": "base",
+      "bytes": 11910,
+      "sha256": "4a769241c41c46cd351993bb818daa9bc0eb0097ae8a57c6924042f7c2ed0e31",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/feedback.test.mjs",
+      "origin": "base",
+      "bytes": 15232,
+      "sha256": "4e17db3a5ebc424179762bfd28e2208f65c6b50da797265fbd459fbac0ce1d62",
+      "neutralized": [
+        "R-066",
+        "R-104",
+        "R-107",
+        "R-157",
+        "R-158"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "tests/backend/fixtures/corpus/seasonal-01.json",
+      "origin": "base",
+      "bytes": 1148,
+      "sha256": "d2a6680c309c87c19b44110feb3ac15ae376fb444f38f1def9962b226c90bbbb",
+      "renamedFromSha256": "c6b3e81cc27238a5363fb0f3597bd91e2d32714d1800f14f4711a90e31b93643"
+    },
+    {
+      "path": "tests/backend/fixtures/library/_manifest.json",
+      "origin": "base",
+      "bytes": 721,
+      "sha256": "584082a43f153db81e614a00dfc4e83cd728471eae2e76fdaccedcf61d69acab"
+    },
+    {
+      "path": "tests/backend/fixtures/library/_themes.json",
+      "origin": "base",
+      "bytes": 356,
+      "sha256": "bc9dde73d26be4c82ca97a611033598371af30f62f8b329bda7e7dd9f93c8602"
+    },
+    {
+      "path": "tests/backend/fixtures/library/_worksheets.json",
+      "origin": "base",
+      "bytes": 444,
+      "sha256": "c70ba52921261a97ba05341a2d64c31eeb7daedf68500908b240141af32a26f2",
+      "neutralized": [
+        "R-138",
+        "R-218",
+        "R-219",
+        "R-220",
+        "R-221",
+        "R-222",
+        "R-223",
+        "R-224",
+        "R-225"
+      ],
+      "replacements": 10
+    },
+    {
+      "path": "tests/backend/fixtures/library/book-alpha-01.json",
+      "origin": "base",
+      "bytes": 353,
+      "sha256": "46c9923a7bf743b9d78ebedaad1c9e5897c0792481bb70dee4eae9a26063fc13",
+      "neutralized": [
+        "R-111"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/fixtures/library/book-alpha-02.json",
+      "origin": "base",
+      "bytes": 284,
+      "sha256": "9cc6f316fb7696e21c361122af26a60874e18e1741096707aa959450211e8e29",
+      "neutralized": [
+        "R-111"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/fixtures/library/book-beta-01.json",
+      "origin": "base",
+      "bytes": 278,
+      "sha256": "507e262a5cb4780098104de9ac72f0c61f1fe4fcb31b8a0a35d93870349cdda2",
+      "neutralized": [
+        "R-111"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/fixtures/library/gov-demo-01.json",
+      "origin": "base",
+      "bytes": 316,
+      "sha256": "25a767e73a1af853e5c5ff55d2e005511d439668312827bbad08eac0989762a2"
+    },
+    {
+      "path": "tests/backend/fixtures/library/igo-demo-01.json",
+      "origin": "base",
+      "bytes": 356,
+      "sha256": "d879ea001d056241a81265fe35f42b4165acff0fc3637b54c5d877890ab4a745",
+      "neutralized": [
+        "R-110"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/fixtures/library/igo-demo-02.json",
+      "origin": "base",
+      "bytes": 349,
+      "sha256": "3ca524c6812a504012bb41bb6e3ae5e5b21ae4543386ad5e301a3936bc321fc0"
+    },
+    {
+      "path": "tests/backend/fixtures/library/paper-demo-01.json",
+      "origin": "base",
+      "bytes": 329,
+      "sha256": "9db3ae6172cc2bbf527d7833d0ab7e0e42111db7f0290fae80cfc3c67a622398"
+    },
+    {
+      "path": "tests/backend/fixtures/library/pd-demo-01.json",
+      "origin": "base",
+      "bytes": 300,
+      "sha256": "b7448c7865e5ae1a3ad7c434f6e57bdedb8da00b45369e4f0112f7e1b5cb5e5d"
+    },
+    {
+      "path": "tests/backend/fixtures/library/pd-demo-02.json",
+      "origin": "base",
+      "bytes": 303,
+      "sha256": "52218cf52afb3ebc6533af531dd2dbc6715a7c4da8f0b2d2397383a2c9d6c030"
+    },
+    {
+      "path": "tests/backend/fixtures/library/worksheet-demo-a.json",
+      "origin": "base",
+      "bytes": 333,
+      "sha256": "ddc1e86e2d4c709f34cf05d00def79c37f2f5769ad83b0183ba91f772b9b364d",
+      "renamedFromSha256": "97b97ffe36a68f67835ccc69d2f5f4d2fc938835ad8ce364c94a7323ff9e2f80",
+      "neutralized": [
+        "R-112",
+        "R-138",
+        "R-224"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "tests/backend/fixtures/library/worksheet-demo-b.json",
+      "origin": "base",
+      "bytes": 333,
+      "sha256": "4e1b7c7222a0c289821d3cdc2bfb73d18c8c25f19a3b42342d056b4af2b76f0b",
+      "renamedFromSha256": "c1c099ce1258249b130cd1263300377cf97bf851ca4b98f6796d90d19b65dc43",
+      "neutralized": [
+        "R-112",
+        "R-138",
+        "R-225"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/citation-rules.md",
+      "origin": "base",
+      "bytes": 17,
+      "sha256": "67e9acc3ae181b89db8cfc14dcc6aa2487a185b840d3bfc359c25c0a805f4cf1"
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/guidance-extra.md",
+      "origin": "base",
+      "bytes": 170,
+      "sha256": "33e4866feebe3026b8af79911e47df3f536d67c4e2fe3eb0d2462bdb2a0effd2",
+      "renamedFromSha256": "0ae7a8c70b4781cd802be5dfd3706caa87124c75410c5f268d37e6806f99d848"
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/safety.md",
+      "origin": "base",
+      "bytes": 17,
+      "sha256": "de63d2a264e188604517cc984ece4246d4f05c2aba175035574e1d0d4b91f200"
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/style-csb.md",
+      "origin": "base",
+      "bytes": 18,
+      "sha256": "74d2381eb386f2ddaa1759bd2f0673a854ba70fa8d2e3b717396b69b6e9c046c"
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/system.md",
+      "origin": "base",
+      "bytes": 22,
+      "sha256": "5bb3f809fafebe49bc6bbb232640350b864788048e3851ca63e8e4638bb18760"
+    },
+    {
+      "path": "tests/backend/fixtures/prompts/topics-guide.md",
+      "origin": "base",
+      "bytes": 170,
+      "sha256": "796cedd6fdd4ebb609e1bba340e2c08c010dee39d8fdd28000675f73434a0548",
+      "renamedFromSha256": "6d204286d4dffd05261097b93a74b4ad31335c83b8c4d816d6cc5f7bd9ee0d30"
+    },
+    {
+      "path": "tests/backend/fixtures/public/app.css",
+      "origin": "base",
+      "bytes": 87,
+      "sha256": "2c6a3e704d509f9a24727b853f3712c3b38a0c6fcd14501873c146fa56a6bc8b"
+    },
+    {
+      "path": "tests/backend/fixtures/public/index.html",
+      "origin": "base",
+      "bytes": 291,
+      "sha256": "d9c8bd0696ec3aec536e043ae7125d2136438a82e78e07c47b55158a0b05f936",
+      "neutralized": [
+        "R-004",
+        "R-044"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "tests/backend/fixtures/public/nested/deep.js",
+      "origin": "base",
+      "bytes": 40,
+      "sha256": "5cc8870e24cbb83144d206286b2d837d88997b749d5db52d4d877e77ac332578"
+    },
+    {
+      "path": "tests/backend/fixtures/secret.txt",
+      "origin": "base",
+      "bytes": 24,
+      "sha256": "f3eae054a6c874b08151836aabc554136e658301bd44aff281baaff3286f30d3"
+    },
+    {
+      "path": "tests/backend/health-import.test.mjs",
+      "origin": "base",
+      "bytes": 23626,
+      "sha256": "4db9974c840cb46ef2e93aa888ccfd7d76302ee79256c011e68bcb7c176a9154",
+      "neutralized": [
+        "R-105",
+        "R-106",
+        "R-136"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "tests/backend/health.test.mjs",
+      "origin": "base",
+      "bytes": 3633,
+      "sha256": "358a01373d44d8d961e30bf2db25f6fb0a7a53febd2c583356aafb6a33df5221",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-136"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "tests/backend/helpers.mjs",
+      "origin": "base",
+      "bytes": 15862,
+      "sha256": "291631002606329af963f93e9d6054cd7b56edadebcf2c603b726a188d9e2722",
+      "neutralized": [
+        "R-103",
+        "R-104",
+        "R-110",
+        "R-118",
+        "R-119",
+        "R-121",
+        "R-124",
+        "R-126"
+      ],
+      "replacements": 10
+    },
+    {
+      "path": "tests/backend/index.js",
+      "origin": "base",
+      "bytes": 709,
+      "sha256": "9cb3d83f2fbf846e7f4b4730399af78f2f0bbaae9c3f3bf8e14b595642cf9db0"
+    },
+    {
+      "path": "tests/backend/lifecycle.test.mjs",
+      "origin": "base",
+      "bytes": 7816,
+      "sha256": "04886349bdffb8e30b1059f2c73a89bd8d24116e8d25d425d6c6f0ad24c44129",
+      "neutralized": [
+        "R-043",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-158",
+        "R-167"
+      ],
+      "replacements": 12
+    },
+    {
+      "path": "tests/backend/marks.test.mjs",
+      "origin": "base",
+      "bytes": 19685,
+      "sha256": "bfd1e56180d91433cd98da82e9ed3de7a2551f1968f403f6a710ca788502f652",
+      "neutralized": [
+        "R-104",
+        "R-118",
+        "R-119",
+        "R-126",
+        "R-127",
+        "R-128",
+        "R-158",
+        "R-192"
+      ],
+      "replacements": 66
+    },
+    {
+      "path": "tests/backend/me-data.test.mjs",
+      "origin": "base",
+      "bytes": 16239,
+      "sha256": "297beb6e59926652948b273f3b79ed1c64db3f7ce2d841c58db6d4556fd268bf",
+      "neutralized": [
+        "R-009",
+        "R-025",
+        "R-039",
+        "R-103",
+        "R-104",
+        "R-107",
+        "R-118",
+        "R-126",
+        "R-160"
+      ],
+      "replacements": 12
+    },
+    {
+      "path": "tests/backend/memory-byok.test.mjs",
+      "origin": "base",
+      "bytes": 24108,
+      "sha256": "540950f9691bb64f49ff45f6ac9e3ce9e7532c448a2ad84fa46af2baabe52f83",
+      "neutralized": [
+        "R-039",
+        "R-100",
+        "R-101",
+        "R-103",
+        "R-104",
+        "R-106",
+        "R-108"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "tests/backend/memory-dedupe.test.mjs",
+      "origin": "base",
+      "bytes": 18679,
+      "sha256": "8b936474fee3a679857eef55222b080927a6c9034a02fd06a9f255feee22f4ec",
+      "neutralized": [
+        "R-066",
+        "R-100",
+        "R-102",
+        "R-103",
+        "R-104",
+        "R-106",
+        "R-156",
+        "R-160",
+        "R-165",
+        "R-166",
+        "R-168",
+        "R-171",
+        "R-172",
+        "R-180"
+      ],
+      "replacements": 40
+    },
+    {
+      "path": "tests/backend/memory-overlap-trim.test.mjs",
+      "origin": "base",
+      "bytes": 14811,
+      "sha256": "6c2fd747ef201f3f1b330bce76b234a7c0ebcd43b3270dfeeca002aa2d4651d3",
+      "neutralized": [
+        "R-100",
+        "R-102",
+        "R-106",
+        "R-156",
+        "R-160",
+        "R-164",
+        "R-166",
+        "R-168",
+        "R-170",
+        "R-171",
+        "R-172",
+        "R-180"
+      ],
+      "replacements": 27
+    },
+    {
+      "path": "tests/backend/memory-tiers.test.mjs",
+      "origin": "base",
+      "bytes": 17398,
+      "sha256": "5705e1a376785f16c803e5763b6eb97db65705696e650e3dbc43bcb597bc3f46",
+      "neutralized": [
+        "R-066",
+        "R-097",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-156",
+        "R-166",
+        "R-180"
+      ],
+      "replacements": 27
+    },
+    {
+      "path": "tests/backend/migration.test.mjs",
+      "origin": "base",
+      "bytes": 19583,
+      "sha256": "540215945a7fa348311644fefa3397446c67937e2c9828d91111b70b87e2db39",
+      "neutralized": [
+        "R-001",
+        "R-103",
+        "R-104"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "tests/backend/mock.test.mjs",
+      "origin": "base",
+      "bytes": 4545,
+      "sha256": "a402a27ba20bb7a3d69d18d958d00bd696456d14808654217eaaeeadc019cbc5",
+      "neutralized": [
+        "R-126"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/model-policy.test.mjs",
+      "origin": "base",
+      "bytes": 7571,
+      "sha256": "13f5beaf9d80a602cd7dc23aa826c1dad3ad89aa225bb58cee82fff781f44794",
+      "neutralized": [
+        "R-100"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/multiuser.test.mjs",
+      "origin": "base",
+      "bytes": 14201,
+      "sha256": "8286b27be1c2a1d24d4a0d5b32198c67bb9637388b3372f2303230f130f88fa6",
+      "neutralized": [
+        "R-100",
+        "R-103",
+        "R-136",
+        "R-155"
+      ],
+      "replacements": 10
+    },
+    {
+      "path": "tests/backend/quota.test.mjs",
+      "origin": "base",
+      "bytes": 13464,
+      "sha256": "da7a02100c011a147c34ba2f4e91715607226252c55ca1c8cbfb9fcb478ca148",
+      "neutralized": [
+        "R-045",
+        "R-103",
+        "R-104",
+        "R-158"
+      ],
+      "replacements": 6
+    },
+    {
+      "path": "tests/backend/restore-data.test.mjs",
+      "origin": "base",
+      "bytes": 8985,
+      "sha256": "9199be295d6ed94fe700ad934ed83738ee25bf26e2790a67b5cff48ab383cde7",
+      "neutralized": [
+        "R-011",
+        "R-045",
+        "R-104",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 9
+    },
+    {
+      "path": "tests/backend/restore-guard.test.mjs",
+      "origin": "base",
+      "bytes": 18041,
+      "sha256": "8171fc01de152367eab954b65f74fb3c5fb9ae0d7afbb76c53bbaa1616f89ae4",
+      "neutralized": [
+        "R-011",
+        "R-045",
+        "R-104",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 13
+    },
+    {
+      "path": "tests/backend/rotate-data-key.test.mjs",
+      "origin": "base",
+      "bytes": 16737,
+      "sha256": "4dd4d0865543620d53885fcec4f7ee55b2d1367f731410bc682d427b1d4b3017",
+      "neutralized": [
+        "R-039",
+        "R-100",
+        "R-158"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "tests/backend/security.test.mjs",
+      "origin": "base",
+      "bytes": 4539,
+      "sha256": "a3141c7258487511cdc2eb5b28219a48fbe10bfcf8a430a68f097f562bf3f194"
+    },
+    {
+      "path": "tests/backend/session.test.mjs",
+      "origin": "base",
+      "bytes": 5548,
+      "sha256": "b6248b5586a06143080a19935cc54c8b86691682004dc1fdfd8d70bce5cfb411"
+    },
+    {
+      "path": "tests/backend/static.test.mjs",
+      "origin": "base",
+      "bytes": 2085,
+      "sha256": "672da413789ed5ec1571189bf10551e9ed17c97bbda3926388dd53ff65d86b61",
+      "neutralized": [
+        "R-004",
+        "R-160"
+      ],
+      "replacements": 2
+    },
+    {
+      "path": "tests/backend/store.test.mjs",
+      "origin": "base",
+      "bytes": 13066,
+      "sha256": "2d5334d43da96bb7bc49840eb87b0e413377c817d7142a04c1ac75d9f74e490c"
+    },
+    {
+      "path": "tests/backend/usage.test.mjs",
+      "origin": "base",
+      "bytes": 43554,
+      "sha256": "c7e9841c579957cd3ff910d9b09dd27a8761fe141dadc6a4c30c59e55e7dc966",
+      "neutralized": [
+        "R-039",
+        "R-045",
+        "R-103",
+        "R-104",
+        "R-105",
+        "R-106",
+        "R-107",
+        "R-158"
+      ],
+      "replacements": 26
+    },
+    {
+      "path": "tests/backend/users.test.mjs",
+      "origin": "base",
+      "bytes": 23173,
+      "sha256": "de2da4a27f3db42f9486570189975e5849f790e1c86f41d568ef9feefd3271e1",
+      "neutralized": [
+        "R-103",
+        "R-104",
+        "R-106",
+        "R-107"
+      ],
+      "replacements": 10
+    },
+    {
+      "path": "tests/backend/vision.test.mjs",
+      "origin": "base",
+      "bytes": 16994,
+      "sha256": "3b072cdbb3348a4cb2bd842852220dd661003f62ec32322ad443a6dd5af6a6f5",
+      "neutralized": [
+        "R-104"
+      ],
+      "replacements": 1
+    },
+    {
+      "path": "tests/backend/websearch-quota.test.mjs",
+      "origin": "base",
+      "bytes": 8433,
+      "sha256": "1a09c0d106ee991c3460e9cd0fbfc2e060ec5eeda1d58d627e6907b1eae73212",
+      "neutralized": [
+        "R-100",
+        "R-103"
+      ],
+      "replacements": 5
+    },
+    {
+      "path": "tests/rag/rerank.test.mjs",
+      "origin": "base",
+      "bytes": 5197,
+      "sha256": "8eb504ce0dca23ef888d9b740e06228e0cc7e08f167f66d2244a7aad3c6797fa"
+    },
+    {
+      "path": "tests/rag/tokenize.test.mjs",
+      "origin": "base",
+      "bytes": 2197,
+      "sha256": "b7aab5f079706909cb067e2fa3c2e28d83ff91f0503a7f3f6457a5132198fe1f",
+      "neutralized": [
+        "R-188",
+        "R-189",
+        "R-190",
+        "R-191"
+      ],
+      "replacements": 4
+    },
+    {
+      "path": "tests/README.md",
+      "origin": "base",
+      "bytes": 2667,
+      "sha256": "e6fde7342e92f445d6c6578447ffd4262c201bbaad4d17923969e134ebe433c1",
+      "neutralized": [
+        "R-060"
+      ],
+      "replacements": 3
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "origin": "staging-license",
+      "bytes": 5967,
+      "sha256": "01efa0f546ebe33f1a74783c05d8a5bbd95f02e060fdc949d93656287cf7f79d"
+    },
+    {
+      "path": "VERSION",
+      "origin": "overlay",
+      "bytes": 6,
+      "sha256": "71015c979ccb0fc8a0be7ca0ae83046ab045cdc2c8faa09fb2f0f7e440f9b4a6"
+    }
+  ]
+}

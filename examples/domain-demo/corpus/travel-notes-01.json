@@ -1,0 +1,37 @@
+{
+  "id": "travel-notes-01",
+  "title": "示例：城市两日步行路线笔记",
+  "author": "Chat Terminal Framework contributors",
+  "year": 2026,
+  "sourceUrl": "https://example.com/chat-terminal-framework/examples/travel-notes-01",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "lang": "zh",
+  "tags": ["示例", "旅行", "步行"],
+  "sections": [
+    {
+      "anchor": "day-1",
+      "heading": "第一天：老城到河岸",
+      "paragraphs": [
+        { "para": 1, "text": "上午从老城广场出发，沿主街步行约 40 分钟到旧城墙，途中坡度平缓，适合穿轻便鞋。" },
+        { "para": 2, "text": "午后沿河岸步道向东南走，全程约 3 公里，树荫较多；傍晚可在河岸观景台停留 30 分钟看日落。" }
+      ]
+    },
+    {
+      "anchor": "day-2",
+      "heading": "第二天：市场与街区",
+      "paragraphs": [
+        { "para": 1, "text": "早上先去本地市场，建议 9 点前到达，人流较少；市场周边小吃摊适合解决早餐。" },
+        { "para": 2, "text": "下午逛两条相邻的特色街区，步行总距离约 2 公里；体力有限时可在街区间打车，单程约 10 分钟。" }
+      ]
+    },
+    {
+      "anchor": "practical",
+      "heading": "实用提示",
+      "paragraphs": [
+        { "para": 1, "text": "两日总步行距离约 9 公里，建议把第二天下午留作弹性时间；雨天可改为室内市场与咖啡馆路线。" },
+        { "para": 2, "text": "以上为示例路线，不含真实票价、营业时间与店铺信息；出行前请自行核实当地天气与开放情况。" }
+      ]
+    }
+  ]
+}

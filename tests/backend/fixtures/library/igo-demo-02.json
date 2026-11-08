@@ -1,0 +1,18 @@
+{
+  "id": "igo-demo-02",
+  "title": "国际组织乙",
+  "license": "政府间组织公开材料（注明版本与条款）",
+  "sourceUrl": "https://example.org/igo-02",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "国际乙"
+        }
+      ]
+    }
+  ]
+}

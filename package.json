@@ -1,0 +1,45 @@
+{
+  "name": "chat-terminal-framework",
+  "version": "0.2.1",
+  "private": false,
+  "description": "零依赖 Node.js 通用 AI 对话终端框架（流式对话 / 会话存储 / 长期记忆 / RAG 检索 / 附件 / 多用户鉴权 / 管理后台）",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node bin/serve.mjs",
+    "start:mock": "CHAT_MOCK=1 node bin/serve.mjs",
+    "test": "node --test --test-reporter=tap \"tests/backend/**/*.test.mjs\" \"tests/rag/**/*.test.mjs\"",
+    "test:backend": "node --test --test-reporter=tap \"tests/backend/**/*.test.mjs\"",
+    "test:rag": "node --test --test-reporter=tap \"tests/rag/**/*.test.mjs\""
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "terminal",
+    "sse",
+    "rag",
+    "memory",
+    "zero-dependency",
+    "chatbot",
+    "framework"
+  ],
+  "files": [
+    "bin",
+    "server",
+    "rag",
+    "public",
+    "prompts",
+    "corpus",
+    "docs",
+    "scripts",
+    "tests",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "THIRD_PARTY.md",
+    "CHANGELOG.md"
+  ]
+}

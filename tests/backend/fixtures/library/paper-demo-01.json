@@ -1,0 +1,18 @@
+{
+  "id": "paper-demo-01",
+  "title": "OA 论文甲",
+  "license": "开放获取论文（CC BY 4.0）",
+  "sourceUrl": "https://example.org/paper-01",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "论文甲"
+        }
+      ]
+    }
+  ]
+}

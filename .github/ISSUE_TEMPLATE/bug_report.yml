@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a reproducible problem in Chat Terminal Framework
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **do not** paste API keys, real user data or
+        private deployment information. Security issues go to SECURITY.md, not here.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which release or commit are you running?
+      placeholder: "0.2.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: node
+    attributes:
+      label: Node.js version
+      options:
+        - "22"
+        - "24"
+        - "other (please specify in reproduction)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: auth
+    attributes:
+      label: AUTH mode
+      options:
+        - "off"
+        - "on"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior, including error messages or stack traces (redact secrets).
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal commands or config needed to trigger the bug.
+      placeholder: |
+        1. cp .env.example .env
+        2. CHAT_MOCK=1 node bin/serve.mjs
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs (optional)
+      description: Redact keys, tokens, personal data and internal hostnames.
+    validations:
+      required: false

@@ -1,0 +1,69 @@
+{
+  "id": "demo-handbook-03",
+  "title": "扩展点：人格、语料、工具与品牌",
+  "author": "Open Chat Terminal Framework authors",
+  "year": 2026,
+  "sourceUrl": "https://example.com/open-chat-terminal-framework",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "lang": "zh",
+  "tags": ["扩展", "二次开发", "演示语料"],
+  "sections": [
+    {
+      "anchor": "prompt-pack",
+      "heading": "人格 / 提示词包",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "prompts 目录下的 Markdown 文件按固定顺序拼接成系统提示词：system.md 定义身份与边界，style-csb.md 定义表达风格，safety.md 定义安全优先级，citation-rules.md 定义引用规则。替换这些文件即可更换人格，不需要改代码。可选文件缺失时会跳过或使用内置占位，不会阻断启动。"
+        },
+        {
+          "para": 2,
+          "text": "提示词包随部署配置一起版本化：每次修改都记录在案，便于回滚与对比。对于多租户场景，可以在部署层为不同租户准备不同的提示词目录，启动时通过环境变量或挂载切换。"
+        }
+      ]
+    },
+    {
+      "anchor": "corpus-pack",
+      "heading": "语料包",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "corpus 目录下每个 JSON 文件是一篇文档，包含标题、作者、年份、来源链接、许可、语言、标签与分节段落。启动时一次性加载并在内存建索引，检索结果带文档 id 与段落锚点，回答中的引用可以精确跳转到原文位置。"
+        },
+        {
+          "para": 2,
+          "text": "语料替换是纯数据操作：增删文件、重启进程即可。建议为每篇文档保留来源与许可字段，引用展示与合规审计都依赖这些元数据。"
+        }
+      ]
+    },
+    {
+      "anchor": "scale-pack",
+      "heading": "工具 / 自评问卷包",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "框架内置一个演示自评问卷，用来演示题目、选项、分段与计分的完整链路。自定义自评问卷可以放在数据目录的 scales-private 子目录，按 JSON schema 注册：定义题目文本、选项与分值、分段区间、来源与许可，引擎会自动完成计分、结果摘要与历史记录。"
+        },
+        {
+          "para": 2,
+          "text": "私有自评问卷与本框架的通用引擎通过注册接口解耦：引擎只负责校验与计分，具体题目与材料由部署方提供并自行承担授权责任。历史记录只保存结果摘要，不保存原始答案，避免敏感数据长期留存。"
+        }
+      ]
+    },
+    {
+      "anchor": "brand-pack",
+      "heading": "品牌 / 文案包",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "public 目录下的静态前端与 README 是品牌外壳：页面标题、产品文案、配色与图标都可以按部署方品牌替换。框架本身不包含任何品牌名称或商标素材，默认外观保持中性。"
+        },
+        {
+          "para": 2,
+          "text": "品牌替换建议只改静态资源与文案，不改业务代码：这样升级框架版本时品牌层可以独立维护，避免每次升级都要重新合并定制内容。"
+        }
+      ]
+    }
+  ]
+}

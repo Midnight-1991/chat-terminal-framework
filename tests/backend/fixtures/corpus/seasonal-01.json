@@ -1,0 +1,41 @@
+{
+  "id": "seasonal-01",
+  "title": "换季时节的观察笔记",
+  "author": "合成示例文档（演示用）",
+  "year": "2026",
+  "sourceUrl": "https://example.com/notes/seasonal-observations",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "licenseUrl": "https://example.com/license-ref-synthetic-fixture",
+  "lang": "zh",
+  "tags": [
+    "change",
+    "notes",
+    "季节"
+  ],
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "一句话",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "换季不是问题，它是时间在生活里的形状。"
+        }
+      ]
+    },
+    {
+      "anchor": "s2",
+      "heading": "换季时的常见现象",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "在季节交替的数周里，反复的增减衣物、早晚温差与注意力分散都可能出现。它们不自动等于问题，而是人对环境变化的正常反应。"
+        },
+        {
+          "para": 2,
+          "text": "当这种不适持续较长时间、明显影响日常安排，或伴随持续困扰时，应当寻求他人帮助。"
+        }
+      ]
+    }
+  ]
+}

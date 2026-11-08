@@ -1,0 +1,17 @@
+{
+  "id": "book-alpha-02",
+  "title": "甲书",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "第二章 继续",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "甲三"
+        }
+      ]
+    }
+  ]
+}

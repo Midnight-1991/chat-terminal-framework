@@ -1,0 +1,55 @@
+{
+  "id": "demo-handbook-01",
+  "title": "框架总览：一个可独立部署的 AI 对话终端",
+  "author": "Open Chat Terminal Framework authors",
+  "year": 2026,
+  "sourceUrl": "https://example.com/open-chat-terminal-framework",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "lang": "zh",
+  "tags": ["框架", "总览", "演示语料"],
+  "sections": [
+    {
+      "anchor": "overview",
+      "heading": "这套框架提供什么",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "本框架是一个零运行时依赖的 Node.js AI 对话终端：后端只使用 Node 内置模块，前端是无需构建的原生 JavaScript。启动一个进程即可获得完整的对话终端，包括流式输出、会话管理、长期记忆、本地知识库检索与附件解析。"
+        },
+        {
+          "para": 2,
+          "text": "分层上分为四块：bin 负责启动与优雅关停；server 提供 HTTP 路由、会话与记忆存储、检索适配、鉴权与配额；rag 提供分词、查询扩展、相关性与重排等零依赖检索能力；public 提供静态前端。四块之间通过明确的模块接口衔接，替换任意一块不需要改动其它块。"
+        }
+      ]
+    },
+    {
+      "anchor": "runtime",
+      "heading": "运行模型",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "服务通过环境变量配置，不依赖配置文件。最关键的三个变量是 PORT、DATA_DIR 与 DEEPSEEK_API_KEY：前两个决定监听端口与数据落盘位置，最后一个用于调用 OpenAI 兼容的对话模型接口。没有 key 时可以用 CHAT_MOCK=1 启动 mock 模式，本地演示与测试都不需要联网。"
+        },
+        {
+          "para": 2,
+          "text": "运行时数据统一放在 DATA_DIR 下：会话、记忆、用户、附件、自评问卷历史各占一个子路径。备份与恢复脚本都以该目录为边界，因此迁移部署时只需要迁移这一个目录。"
+        }
+      ]
+    },
+    {
+      "anchor": "scope",
+      "heading": "设计取舍",
+      "paragraphs": [
+        {
+          "para": 1,
+          "text": "框架刻意保持零 npm 依赖：代价是需要自己实现检索、分词与部分工具函数，收益是部署面小、没有供应链风险、升级不需要协调依赖版本。对于中小规模知识库（数千到数万段落），内存索引足以覆盖，不需要引入外部向量数据库。"
+        },
+        {
+          "para": 2,
+          "text": "领域内容与通用能力分离：人格提示词、语料、自评问卷题目与品牌文案都放在可替换的扩展点里，通用代码不内置任何特定领域的内容。这样同一套框架可以部署成不同领域的对话终端，而领域资产可以独立授权与版本管理。"
+        }
+      ]
+    }
+  ]
+}

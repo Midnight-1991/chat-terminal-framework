@@ -1,0 +1,18 @@
+{
+  "id": "pd-demo-02",
+  "title": "公版乙",
+  "license": "Public Domain",
+  "sourceUrl": "https://example.org/pd-02",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "公版乙文"
+        }
+      ]
+    }
+  ]
+}

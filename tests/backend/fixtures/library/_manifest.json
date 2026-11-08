@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-31",
+  "note": "tests/backend/library.test.mjs 夹具（非真实语料）",
+  "books": [
+    {
+      "slug": "book-alpha",
+      "title": "甲书",
+      "author": "作者甲",
+      "translator": "译者甲",
+      "publisher": "出版社甲",
+      "year": 2020,
+      "format": "epub",
+      "chapters": 2,
+      "docIds": [
+        "book-alpha-01",
+        "book-alpha-02"
+      ],
+      "chars": 100
+    },
+    {
+      "slug": "book-beta",
+      "title": "乙书",
+      "author": "作者乙",
+      "publisher": "出版社乙",
+      "year": 2021,
+      "format": "pdf",
+      "chapters": 1,
+      "docIds": [
+        "book-beta-01"
+      ],
+      "chars": 50
+    }
+  ]
+}

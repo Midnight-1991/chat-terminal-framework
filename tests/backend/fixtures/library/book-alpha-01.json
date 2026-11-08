@@ -1,0 +1,21 @@
+{
+  "id": "book-alpha-01",
+  "title": "甲书",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "第一章 开始",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "甲一"
+        },
+        {
+          "para": 1,
+          "text": "甲二"
+        }
+      ]
+    }
+  ]
+}

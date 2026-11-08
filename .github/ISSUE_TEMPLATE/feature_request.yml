@@ -1,0 +1,61 @@
+name: Feature request
+description: Suggest an improvement to the framework
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is a **generic framework**: domain-specific content should live in
+        extension packs (prompts / corpus / theme), not in core code. Please describe the
+        general capability you need.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, and what blocks you today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Interface sketch, config, or behavior you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - server / HTTP API
+        - chat pipeline (SSE, memory)
+        - retrieval (rag)
+        - auth / users / admin
+        - security / encryption
+        - frontend (public)
+        - extension points / docs
+        - scripts / operations
+        - other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This is a general framework capability, not domain-specific content.
+          required: true
+        - label: I searched existing issues and did not find a duplicate.
+          required: true

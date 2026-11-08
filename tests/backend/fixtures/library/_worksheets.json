@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "totalDocs": 2,
+  "totalChars": 20,
+  "sites": {
+    "siteA": {
+      "provider": "example.com"
+    },
+    "siteB": {
+      "provider": "example.org"
+    }
+  },
+  "worksheets": [
+    {
+      "docId": "worksheet-demo-a",
+      "site": "siteA",
+      "title": "模板卡甲",
+      "chars": 10
+    },
+    {
+      "docId": "worksheet-demo-b",
+      "site": "siteB",
+      "title": "模板卡乙",
+      "chars": 10
+    }
+  ]
+}

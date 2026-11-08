@@ -1,0 +1,72 @@
+# NOTICE
+
+Chat Terminal Framework
+Copyright 2026 Chat Terminal Framework contributors
+
+This distribution is licensed under the Apache License, Version 2.0 (the
+"License"); you may not use this distribution except in compliance with the
+License. A copy of the License is included in the file `LICENSE`.
+
+## 1. Copyright and attribution
+
+The framework source code, documentation, and self-authored demo content are
+Copyright 2026 Chat Terminal Framework contributors.
+
+## 2. Third-party assets distributed with this distribution
+
+| Asset | Upstream | License | Location in this distribution |
+|---|---|---|---|
+| Ma Shan Zheng font subset (3 glyphs) | https://github.com/google/fonts/tree/main/ofl/mashanzheng | SIL Open Font License 1.1; full text at `public/fonts/OFL-MaShanZheng.txt` | `public/fonts/hello-subset.woff2` |
+| User-interface color tokens (Tokyo Night, Nord, Catppuccin, Everforest, Gruvbox, Solarized, Rosé Pine, GitHub Primer) | public project palettes | individual color values; palette project names and marks belong to their owners | `public/css/style.css` |
+
+The Ma Shan Zheng font subset is redistributed under the SIL Open Font
+License, Version 1.1. Its copyright notice and license text are retained:
+"Copyright 2018 The Ma Shan Zheng Project Authors
+(https://github.com/googlefonts/mashanzheng)."
+
+## 3. Design references (no third-party code copied)
+
+The following projects were consulted for design ideas only. No source code,
+prompt text, user-interface assets, or other copyrightable material was copied
+from them; all implementations in this distribution are original.
+
+- letta-ai/letta (Apache-2.0) — memory chunking and async consolidation concepts — https://github.com/letta-ai/letta
+- getzep/zep (Apache-2.0) — memory contradiction handling concepts — https://github.com/getzep/zep
+- ChatGPTNextWeb/NextChat (MIT) — mobile session-list interaction concepts — https://github.com/ChatGPTNextWeb/NextChat
+- open-webui/open-webui (BSD-3-Clause with brand terms) — session storage structure concepts — https://github.com/open-webui/open-webui
+- lucaong/minisearch (MIT) — field-weighted search concepts — https://github.com/lucaong/minisearch
+- oramasearch/orama (Apache-2.0) — hybrid ranking concepts — https://github.com/oramasearch/orama
+- blader/humanizer (MIT) — style-feature checklist concepts, rules rewritten from scratch — https://github.com/blader/humanizer
+- langgptai/LangGPT (Apache-2.0) — prompt sectioning concepts — https://github.com/langgptai/LangGPT
+- anthropics/claude-cookbooks (MIT) — prompt organization concepts — https://github.com/anthropics/claude-cookbooks
+- gkurt/tegaki and Jkalio52/khoshnus (MIT) — handwriting reveal animation concepts — https://github.com/gkurt/tegaki ; https://github.com/Jkalio52/khoshnus
+
+The names and marks of all projects listed above belong to their respective
+owners. Their listing here does not imply affiliation or endorsement.
+
+## 4. Self-authored demo content
+
+Files under `corpus/`, `prompts/`, and `examples/` contain self-authored demo
+content created for this distribution. That content is dedicated to the public
+domain under CC0 1.0 Universal
+(https://creativecommons.org/publicdomain/zero/1.0/). No third-party text is
+included in this demo content.
+
+## 5. Content not distributed
+
+The following content is NOT part of this distribution and is not covered by
+the licenses above:
+
+- third-party content packs and their source materials;
+- third-party text collections and prompt packs;
+- production deployment configurations and internal review records.
+
+Users are responsible for supplying their own compliant content.
+
+## 6. Trademarks
+
+The name "Chat Terminal Framework" and any associated logos are marks of the
+project contributors. No trademark or name rights are granted under the Apache
+License, Version 2.0 (see Section 6 of the License). All other product names,
+logos, and trademarks are the property of their respective owners; this
+project claims no affiliation with, or endorsement by, any third party.

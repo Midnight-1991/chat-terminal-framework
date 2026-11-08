@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-31",
+  "themes": [
+    {
+      "id": "theme-alpha",
+      "name": "主题甲",
+      "desc": "第一个主题",
+      "slugs": [
+        "book-alpha"
+      ]
+    },
+    {
+      "id": "theme-beta",
+      "name": "主题乙",
+      "desc": "第二个主题",
+      "slugs": [
+        "book-beta"
+      ]
+    }
+  ]
+}

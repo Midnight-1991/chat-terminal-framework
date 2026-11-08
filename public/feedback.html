@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" class="page-auth-html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0F4142">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="向 Chat Terminal 提交反馈，查看处理进度。">
+  <title>反馈 · Chat Terminal</title>
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page-auth" data-design="rp">
+  <div class="page-auth">
+    <header class="page-top">
+      <a class="page-brand" href="/">Chat Terminal</a>
+      <nav class="page-nav" aria-label="页面导航">
+        <a class="btn-ghost" href="/">返回对话</a>
+        <a class="btn-ghost" href="/account.html">账号</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <p class="form-hint auth-eyebrow">FEEDBACK</p>
+      <h1 class="auth-title">反馈</h1>
+      <p class="form-hint">使用中遇到的问题、想改进的地方，都可以写在这里。</p>
+      <p id="feedbackError" class="form-error" role="alert" hidden></p>
+
+      <section class="auth-card" aria-labelledby="feedbackTitle">
+        <h2 id="feedbackTitle" class="card-title">写反馈</h2>
+        <form id="feedbackForm" class="auth-form" novalidate>
+          <label class="field">
+            <span class="field-label">反馈内容</span>
+            <textarea id="feedbackBody" class="input input-area" name="body" rows="6"
+                      maxlength="2000" placeholder="写下你的想法…" required></textarea>
+          </label>
+          <p class="form-hint feedback-count-row"><span id="feedbackCount">0 / 2000</span></p>
+          <div class="field checkbox-field">
+            <label class="checkbox-label">
+              <input id="allowContext" class="checkbox" type="checkbox">
+              <span>允许附上关联会话的上下文，帮助定位问题</span>
+            </label>
+            <p class="form-hint">只包含所选会话的消息；勾选后处理会更准确。</p>
+          </div>
+          <label class="field">
+            <span class="field-label">关联会话（可选）</span>
+            <select id="conversationSelect" class="input">
+              <option value="">不关联会话</option>
+            </select>
+          </label>
+          <p id="feedbackStatus" class="form-hint" role="status" hidden></p>
+          <button id="feedbackSubmit" class="btn-primary" type="submit">提交反馈</button>
+        </form>
+      </section>
+
+      <section class="auth-card" aria-labelledby="myFeedbackTitle">
+        <h2 id="myFeedbackTitle" class="card-title">我的反馈</h2>
+        <div id="myFeedbackList" class="feedback-list" aria-live="polite">
+          <p class="form-hint">正在载入…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-foot">
+      <p class="form-hint">Chat Terminal</p>
+    </footer>
+  </div>
+  <script type="module" src="/js/feedback.js"></script>
+</body>
+</html>

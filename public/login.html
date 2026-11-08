@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN" class="page-auth-html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0F4142">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="登录 Chat Terminal，回到只属于你的对话与记忆。">
+  <title>登录 · Chat Terminal</title>
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page-auth" data-design="rp">
+  <div class="page-auth">
+    <header class="page-top">
+      <a class="page-brand" href="/">Chat Terminal</a>
+      <nav class="page-nav" aria-label="页面导航">
+        <a id="loginBack" class="btn-ghost" href="/">返回对话</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <p class="form-hint auth-eyebrow">ACCOUNT</p>
+      <h1 id="loginTitle" class="auth-title">登录</h1>
+      <p class="form-hint">登录后，对话、记忆与反馈只属于你。</p>
+
+      <section class="auth-card" aria-labelledby="loginTitle">
+        <form id="loginForm" class="auth-form" novalidate>
+          <label class="field">
+            <span class="field-label">用户名</span>
+            <input id="loginUsername" class="input" name="username" type="text"
+                   autocomplete="username" autocapitalize="off" spellcheck="false" required>
+          </label>
+          <label class="field">
+            <span class="field-label">密码</span>
+            <input id="loginPassword" class="input" name="password" type="password"
+                   autocomplete="current-password" required>
+          </label>
+          <p id="loginError" class="form-error" role="alert" hidden></p>
+          <button id="loginSubmit" class="btn-primary" type="submit">登录</button>
+        </form>
+
+        <p class="form-hint auth-switch">
+          还没有账号？<button id="loginModeToggle" class="btn-link" type="button"
+                            aria-expanded="false" aria-controls="registerForm">用邀请码注册</button>
+        </p>
+
+        <form id="registerForm" class="auth-form" novalidate hidden>
+          <label class="field">
+            <span class="field-label">邀请码</span>
+            <input id="registerCode" class="input" name="inviteCode" type="text"
+                   autocomplete="off" autocapitalize="off" spellcheck="false" required>
+          </label>
+          <label class="field">
+            <span class="field-label">用户名</span>
+            <input id="registerUsername" class="input" name="username" type="text"
+                   autocomplete="username" autocapitalize="off" spellcheck="false" required>
+          </label>
+          <label class="field">
+            <span class="field-label">密码（至少 8 位）</span>
+            <input id="registerPassword" class="input" name="newPassword" type="password"
+                   autocomplete="new-password" required>
+          </label>
+          <label class="consent-field">
+            <input id="registerConsent" class="consent-check" type="checkbox" required>
+            <span class="consent-label">我已阅读并同意
+              <a href="/terms.html" target="_blank" rel="noopener">《用户协议》</a>与
+              <a href="/privacy.html" target="_blank" rel="noopener">《隐私政策》</a></span>
+          </label>
+          <p id="registerError" class="form-error" role="alert" hidden></p>
+          <button id="registerSubmit" class="btn-primary" type="submit">注册并登录</button>
+        </form>
+      </section>
+
+      <p class="form-hint">Chat Terminal 为邀请制。邀请码由管理员发放。</p>
+    </main>
+
+    <footer class="page-foot">
+      <p class="form-hint">Chat Terminal</p>
+    </footer>
+  </div>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

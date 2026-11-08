@@ -1,0 +1,17 @@
+{
+  "id": "book-beta-01",
+  "title": "乙书·第一章",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "乙一"
+        }
+      ]
+    }
+  ]
+}

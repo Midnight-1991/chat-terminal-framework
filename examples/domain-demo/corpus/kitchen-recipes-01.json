@@ -1,0 +1,37 @@
+{
+  "id": "kitchen-recipes-01",
+  "title": "示例：三种家常快手菜的通用步骤",
+  "author": "Chat Terminal Framework contributors",
+  "year": 2026,
+  "sourceUrl": "https://example.com/chat-terminal-framework/examples/kitchen-recipes-01",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "lang": "zh",
+  "tags": ["示例", "厨房", "家常菜"],
+  "sections": [
+    {
+      "anchor": "tomato-egg",
+      "heading": "番茄炒蛋（约 10 分钟）",
+      "paragraphs": [
+        { "para": 1, "text": "番茄切块、鸡蛋加一小撮盐打散。热锅下油，先把鸡蛋炒到刚凝固盛出。" },
+        { "para": 2, "text": "原锅下番茄中火翻炒到出汁，再把鸡蛋倒回，加盐翻匀即可；喜欢汤汁可加两勺热水。" }
+      ]
+    },
+    {
+      "anchor": "noodle-bowl",
+      "heading": "清汤面（约 12 分钟）",
+      "paragraphs": [
+        { "para": 1, "text": "水开下面条，按包装时间少煮半分钟；碗里先放生抽、少许盐、香油和葱花。" },
+        { "para": 2, "text": "面条捞入碗中，浇两勺面汤，按需加青菜或煎蛋；汤底咸淡先少放盐，尝后再补。" }
+      ]
+    },
+    {
+      "anchor": "safety",
+      "heading": "厨房安全提示",
+      "paragraphs": [
+        { "para": 1, "text": "生熟食材分开处理，肉类与蛋类彻底加热；剩菜及时冷藏，再次食用前充分加热。" },
+        { "para": 2, "text": "热油下锅前把食材表面水分擦干，避免溅油；使用明火时不要让锅具空烧。" }
+      ]
+    }
+  ]
+}

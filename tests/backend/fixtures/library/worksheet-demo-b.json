@@ -1,0 +1,18 @@
+{
+  "id": "worksheet-demo-b",
+  "title": "模板卡乙",
+  "license": "LicenseRef-Synthetic-Fixture",
+  "sourceUrl": "https://example.org/ws-02",
+  "sections": [
+    {
+      "anchor": "s1",
+      "heading": "Worksheet",
+      "paragraphs": [
+        {
+          "para": 0,
+          "text": "卡片乙"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0F4142">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Chat Terminal">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Chat Terminal 管理后台：用量概览、用户与配额、反馈处理、邀请码、审计日志、系统状态与服务设置。">
+  <title>管理后台 · Chat Terminal</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body data-design="rp" class="admin-page">
+  <a class="admin-skip" href="#adminMain">跳到主要内容</a>
+
+  <header id="adminTopbar" class="admin-topbar" role="banner">
+    <a id="adminBack" class="admin-icon-btn" href="/" aria-label="返回首页">
+      <svg class="admin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d=" 12H5M11 6l-6 6 6 6"/>
+      </svg>
+    </a>
+    <div class="admin-brand">
+      <span class="admin-wordmark" aria-hidden="true">Chat Terminal</span>
+      <h1 class="admin-title">管理后台</h1>
+    </div>
+    <div class="admin-identity">
+      <span id="adminUser" class="admin-user">—</span>
+      <button id="logoutBtn" class="admin-btn admin-btn-quiet admin-btn-onteal" type="button"
+              aria-label="退出登录">退出</button>
+    </div>
+  </header>
+
+  <nav class="admin-nav" aria-label="管理后台分区">
+    <a class="admin-nav-link" href="#overview">概览</a>
+    <a class="admin-nav-link" href="#users">用户</a>
+    <a class="admin-nav-link" href="#feedback">反馈</a>
+    <a class="admin-nav-link" href="#invites">邀请</a>
+    <a class="admin-nav-link" href="#audit">审计</a>
+    <a class="admin-nav-link" href="#system">系统</a>
+    <a class="admin-nav-link" href="#settings">设置</a>
+  </nav>
+
+  <div class="admin-flash">
+    <p id="adminError" class="admin-flash-line admin-flash-error" role="alert" hidden></p>
+    <p id="adminNotice" class="admin-flash-line admin-flash-notice" role="status" hidden></p>
+  </div>
+
+  <main id="adminMain" class="admin-main">
+    <section id="overview" class="admin-section" aria-labelledby="overviewTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">01 · 用量</p>
+        <h2 id="overviewTitle" class="rp-display admin-section-title">近 30 天概览</h2>
+        <p class="admin-section-note">请求、tokens 与消费来自用量记录；消费金额为估算，按当前价格版本折算。</p>
+      </header>
+
+      <div id="statCards" class="admin-stats" aria-busy="true">
+        <p class="admin-status" data-state="loading">正在加载概览…</p>
+      </div>
+
+      <ul id="overviewSummary" class="admin-summary" aria-label="用户与反馈计数"></ul>
+
+      <p id="byokUsageNote" class="admin-byok-note">BYOK 用量单列，不计入官方成本估算；图表与统计按官方模型口径展示。</p>
+
+      <div class="admin-charts">
+        <article class="admin-chart-card">
+          <h3 class="admin-chart-title">tokens</h3>
+          <p class="admin-chart-note">每日总 tokens（输入 + 输出 + 缓存）</p>
+          <svg id="chartTokens" class="admin-chart" viewBox="0 0 640 200" role="img"
+               aria-label="近 30 天 tokens 折线图" preserveAspectRatio="none">
+            <title>近 30 天 tokens 折线图</title>
+          </svg>
+        </article>
+        <article class="admin-chart-card">
+          <h3 class="admin-chart-title">估算消费</h3>
+          <p class="admin-chart-note">每日估算消费（USD，估算值）</p>
+          <svg id="chartCost" class="admin-chart" viewBox="0 0 640 200" role="img"
+               aria-label="近 30 天估算消费折线图" preserveAspectRatio="none">
+            <title>近 30 天估算消费折线图</title>
+          </svg>
+        </article>
+        <article class="admin-chart-card admin-chart-card-wide">
+          <h3 class="admin-chart-title">缓存命中率</h3>
+          <p class="admin-chart-note">每日官方模型缓存命中率（缓存读取占输入与缓存读取之和）</p>
+          <svg id="chartCache" class="admin-chart" viewBox="0 0 640 200" role="img"
+               aria-label="近 30 天缓存命中率折线图" preserveAspectRatio="none">
+            <title>近 30 天缓存命中率折线图</title>
+          </svg>
+        </article>
+      </div>
+    </section>
+
+    <section id="users" class="admin-section" aria-labelledby="usersTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">02 · 账号</p>
+        <h2 id="usersTitle" class="rp-display admin-section-title">用户与配额</h2>
+        <p class="admin-section-note">封禁、解封与配额调整即时生效；管理员账号豁免配额。</p>
+      </header>
+
+      <div class="admin-controls">
+        <label class="admin-field">
+          <span class="admin-label">搜索用户</span>
+          <input id="userSearch" class="admin-input" type="search" name="userSearch"
+                 placeholder="用户名或昵称" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="admin-field">
+          <span class="admin-label">账号状态</span>
+          <select id="userStatus" class="admin-select" name="userStatus">
+            <option value="">全部状态</option>
+            <option value="active">正常</option>
+            <option value="banned">已封禁</option>
+          </select>
+        </label>
+        <button id="usersRefresh" class="admin-btn admin-btn-quiet" type="button">刷新列表</button>
+      </div>
+
+      <p class="admin-table-hint">表格在窄屏下可左右滑动，查看用量与操作列。</p>
+
+      <div id="userConfirm" class="admin-confirm" role="group" aria-label="操作确认" hidden>
+        <p id="userConfirmText" class="admin-confirm-text"></p>
+        <div class="admin-confirm-actions">
+          <button id="userConfirmOk" class="admin-btn admin-btn-solid admin-btn-danger" type="button">确认操作</button>
+          <button id="userConfirmCancel" class="admin-btn admin-btn-quiet" type="button">取消</button>
+        </div>
+      </div>
+
+      <div id="quotaEditor" class="admin-quota-editor" role="group" aria-label="配额编辑" hidden>
+        <p id="quotaTarget" class="admin-quota-target"></p>
+        <div class="admin-field-row">
+          <label class="admin-field">
+            <span class="admin-label">日配额 tokens</span>
+            <input id="quotaDay" class="admin-input admin-input-number" type="number"
+                   min="0" step="1000" inputmode="numeric">
+          </label>
+          <label class="admin-field">
+            <span class="admin-label">月配额 tokens</span>
+            <input id="quotaMonth" class="admin-input admin-input-number" type="number"
+                   min="0" step="1000" inputmode="numeric">
+          </label>
+        </div>
+        <p class="admin-card-note">两个输入都留空表示不限额；管理员账号始终不限额。</p>
+        <div class="admin-confirm-actions">
+          <button id="quotaSave" class="admin-btn admin-btn-solid" type="button">保存配额</button>
+          <button id="quotaCancel" class="admin-btn admin-btn-quiet" type="button">取消</button>
+        </div>
+      </div>
+
+      <div id="usersTable" class="admin-table-wrap">
+        <p class="admin-status" data-state="loading">正在加载用户…</p>
+      </div>
+
+      <div id="usersPagination" class="admin-pagination" role="group" aria-label="用户分页" hidden>
+        <p id="usersPageInfo" class="admin-pagination-info"></p>
+        <div class="admin-pagination-actions">
+          <label class="admin-page-size">
+            <span>每页</span>
+            <select id="usersPageSize" class="admin-select admin-select-compact" name="usersPageSize">
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </label>
+          <button id="usersPrev" class="admin-btn admin-btn-quiet" type="button">上一页</button>
+          <button id="usersNext" class="admin-btn admin-btn-quiet" type="button">下一页</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="admin-section" aria-labelledby="feedbackTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">03 · 反馈</p>
+        <h2 id="feedbackTitle" class="rp-display admin-section-title">用户反馈</h2>
+        <p class="admin-section-note">反馈正文按原文展示；回复会记录在反馈条目上，用户可在反馈页看到处理状态。</p>
+      </header>
+
+      <div class="admin-controls">
+        <label class="admin-field">
+          <span class="admin-label">处理状态</span>
+          <select id="feedbackStatus" class="admin-select" name="feedbackStatus">
+            <option value="">全部状态</option>
+            <option value="open">待处理</option>
+            <option value="resolved">已处理</option>
+          </select>
+        </label>
+        <button id="feedbackRefresh" class="admin-btn admin-btn-quiet" type="button">刷新反馈</button>
+      </div>
+
+      <div id="feedbackList" class="admin-feedback-list">
+        <p class="admin-status" data-state="loading">正在加载反馈…</p>
+      </div>
+    </section>
+
+    <section id="invites" class="admin-section" aria-labelledby="invitesTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">04 · 运营</p>
+        <h2 id="invitesTitle" class="rp-display admin-section-title">邀请码</h2>
+        <p class="admin-section-note">新建邀请码后发给对方即可注册；禁用会立即阻止继续使用，备注用于内部分类。</p>
+      </header>
+
+      <div class="admin-controls">
+        <label class="admin-field">
+          <span class="admin-label">列表范围</span>
+          <select id="inviteInclude" class="admin-select" name="inviteInclude">
+            <option value="active">可用邀请码</option>
+            <option value="all">全部（含已禁用）</option>
+          </select>
+        </label>
+        <button id="invitesRefresh" class="admin-btn admin-btn-quiet" type="button">刷新列表</button>
+      </div>
+
+      <div class="admin-card admin-invite-create">
+        <h3 class="admin-card-title">新建邀请码</h3>
+        <div class="admin-form admin-form-grid">
+          <label class="admin-field">
+            <span class="admin-label">角色</span>
+            <select id="inviteRole" class="admin-select" name="inviteRole">
+              <option value="user">普通用户</option>
+              <option value="admin">管理员</option>
+            </select>
+          </label>
+          <label class="admin-field">
+            <span class="admin-label">可用次数</span>
+            <input id="inviteMaxUses" class="admin-input admin-input-number" type="number"
+                   min="1" max="20" step="1" value="1" inputmode="numeric">
+          </label>
+          <label class="admin-field">
+            <span class="admin-label">有效期（天）</span>
+            <input id="inviteExpiresDays" class="admin-input admin-input-number" type="number"
+                   min="1" max="90" step="1" value="7" inputmode="numeric">
+          </label>
+          <label class="admin-field">
+            <span class="admin-label">备注（可选）</span>
+            <input id="inviteNote" class="admin-input" type="text" name="inviteNote"
+                   maxlength="200" placeholder="例如：给设计团队" autocomplete="off">
+          </label>
+        </div>
+        <div class="admin-confirm-actions">
+          <button id="inviteCreate" class="admin-btn admin-btn-solid" type="button">生成邀请码</button>
+        </div>
+      </div>
+
+      <div id="invitesList" class="admin-invite-list">
+        <p class="admin-status" data-state="loading">正在加载邀请码…</p>
+      </div>
+    </section>
+
+    <section id="audit" class="admin-section" aria-labelledby="auditTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">05 · 审计</p>
+        <h2 id="auditTitle" class="rp-display admin-section-title">操作日志</h2>
+        <p class="admin-section-note">管理动作会写入审计日志并保留 180 天；日志只读，不含密码或对话正文。</p>
+      </header>
+
+      <div class="admin-controls">
+        <button id="auditRefresh" class="admin-btn admin-btn-quiet" type="button">刷新日志</button>
+      </div>
+
+      <div id="auditList" class="admin-audit-list">
+        <p class="admin-status" data-state="loading">正在加载审计日志…</p>
+      </div>
+
+      <div id="auditPagination" class="admin-pagination" role="group" aria-label="审计日志分页" hidden>
+        <p id="auditPageInfo" class="admin-pagination-info"></p>
+        <div class="admin-pagination-actions">
+          <button id="auditPrev" class="admin-btn admin-btn-quiet" type="button">上一页</button>
+          <button id="auditNext" class="admin-btn admin-btn-quiet" type="button">下一页</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="admin-section" aria-labelledby="systemTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">06 · 系统</p>
+        <h2 id="systemTitle" class="rp-display admin-section-title">系统状态</h2>
+        <p class="admin-section-note">运行时与资源只读展示，磁盘与备份仅供参考；失败时显示不可用。</p>
+      </header>
+
+      <div class="admin-controls">
+        <button id="systemRefresh" class="admin-btn admin-btn-quiet" type="button">刷新状态</button>
+        <button id="sweepAttachments" class="admin-btn admin-btn-quiet" type="button">清理过期附件</button>
+      </div>
+
+      <div id="systemPanel" class="admin-system-grid">
+        <p class="admin-status" data-state="loading">正在加载系统状态…</p>
+      </div>
+    </section>
+
+    <section id="settings" class="admin-section" aria-labelledby="settingsTitle">
+      <header class="admin-section-head">
+        <p class="rp-eyebrow">07 · 设置</p>
+        <h2 id="settingsTitle" class="rp-display admin-section-title">服务设置</h2>
+        <p class="admin-section-note">设置写入服务端配置；模型白名单与限流由部署配置固定，这里只读展示。</p>
+      </header>
+
+      <div id="settingsPanel" class="admin-settings-grid">
+        <p class="admin-status" data-state="loading">正在加载设置…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="admin-foot">
+    <p>Chat Terminal 管理后台。金额为估算值，最终消费以账单为准。</p>
+  </footer>
+
+  <script type="module" src="/js/admin.js" defer></script>
+</body>
+</html>
